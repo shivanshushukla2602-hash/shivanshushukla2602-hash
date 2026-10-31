@@ -4,6 +4,7 @@
   "geeksforgeeks": {
     "source": "https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity",
     "screenshots": [
+      "coding-gfg-panel-2026-11-01.png",
       "coding-gfg-summary-2026-11-01.png",
       "coding-gfg-questions-2026-11-01.png"
     ]
@@ -11,6 +12,7 @@
   "bruteforce": {
     "source": "https://bruteforce.pwioi.com/profile/shivanshu_19",
     "screenshots": [
+      "coding-bruteforce-panel-2026-11-01.png",
       "coding-bruteforce-profile-2026-11-01.png"
     ]
   },
@@ -21,5 +23,21 @@
   "codeforces": {
     "source": "https://codeforces.com/profile/shivanshu_19",
     "screenshot_status": "Not captured: HTTP 403 security verification"
+  },
+  "panel_capture": {
+    "method": "Browser screenshot of original stats-panel bounding boxes; original site colours and numbers unchanged.",
+    "device_scale_factor": 2,
+    "gfg_css_bounds": {
+      "x": 54,
+      "y": 293,
+      "width": 334.84375,
+      "height": 315
+    },
+    "bruteforce_css_bounds": {
+      "x": 429,
+      "y": 300,
+      "width": 821,
+      "height": 368
+    }
   }
 }

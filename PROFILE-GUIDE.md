@@ -62,3 +62,7 @@ LeetCode and Codeforces returned HTTP 403 browser security-verification pages. T
 ## Green contribution heatmap
 
 Only the contribution bars use the dark-to-bright green scale, matching the requested activity-heatmap style. The animation still grows from real daily counts and preserves fixed snapshot totals. Both the daily GIF renderer and static SVG fallback use the green palette; the scheduled refresh preserves it.
+
+## Compact solved-problem panels
+
+The main problem-solving section now shows only the original GeeksforGeeks Problems Overview donut and BruteForce Problem Solving Stats gauges. These are native browser captures of the exact statistics panels, at 2× resolution. Full profile and solved-question screenshots remain in a collapsed details block. LeetCode and Codeforces still need owner-supplied screenshots because their public browser pages require security verification; no replacement graphic is presented as a platform screenshot.

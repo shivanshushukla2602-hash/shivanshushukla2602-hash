@@ -65,26 +65,28 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-Actual public-profile screenshots, captured **1 November 2026**. Click an image to open the live profile.
+Solved-problem panels captured directly from the platforms on **1 November 2026**.
 
 ### GeeksforGeeks
 
-<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-summary-2026-11-01.png" alt="Actual GeeksforGeeks profile screenshot for Shivanshu: 94 problems solved, coding score 210, difficulty breakdown and submission heatmap. Captured 1 November 2026." width="100%" /></a>
-
-<details>
-<summary><strong>See the solved-question list</strong></summary>
-
-<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-questions-2026-11-01.png" alt="Actual GeeksforGeeks solved-question list showing Activity Selection, Police and Thieves, Fractional Knapsack, Maximum Triplet product and other accepted problems." width="100%" /></a>
-
-</details>
+<p align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-panel-2026-11-01.png" alt="Actual GeeksforGeeks Problems Overview panel: 94 solved — Basic 25, Easy 48, Medium 20, Hard 1, School 0." width="480" /></a></p>
 
 ### PW IOI BruteForce
 
-<a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-profile-2026-11-01.png" alt="Actual PW IOI BruteForce profile screenshot for shivanshu_19: 119 solved, difficulty breakdown, ranks, streaks, activity heatmap and recent solved questions. Captured 1 November 2026." width="100%" /></a>
+<a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-panel-2026-11-01.png" alt="Actual BruteForce Problem Solving Stats panel: 119 solved — Easy 84, Medium 32 and Hard 3, with the platform's original progress gauges." width="100%" /></a>
 
 [LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19)
 
-<sub>Screenshots are dated snapshots. Verified statistics for all four platforms are available below.</sub>
+<details>
+<summary><strong>Full profiles, activity and recent solved questions</strong></summary>
+
+<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-summary-2026-11-01.png" alt="Actual GeeksforGeeks profile with coding score, difficulty breakdown and submission heatmap." width="100%" /></a>
+
+<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-questions-2026-11-01.png" alt="Actual GeeksforGeeks solved-question list, including Activity Selection, Police and Thieves and Fractional Knapsack." width="100%" /></a>
+
+<a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-profile-2026-11-01.png" alt="Actual BruteForce profile, activity heatmap, ranks and recent solved questions." width="100%" /></a>
+
+</details>
 
 <!-- CODING-STATS:START -->
 <details>
