@@ -7,8 +7,8 @@ ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets';FRAMES=ROOT/'preview/
 portrait='data:image/png;base64,'+base64.b64encode((OUT/'portrait.png').read_bytes()).decode()
 for mobile in [False,True]:
  suffix='-mobile' if mobile else ''
- for name,fn in [('about',about),('stack',stack),('footer',footer)]: (OUT/f'{name}{suffix}.svg').write_text(fn(mobile))
- for item in PROJECTS:(OUT/f'project-{item[0]}{suffix}.svg').write_text(project(item,mobile))
+ for name,fn in [('about',about),('stack',stack),('footer',footer)]: (OUT/f'{name}{suffix}-v2.svg').write_text(fn(mobile))
+ for item in PROJECTS:(OUT/f'project-{item[0]}{suffix}-v2.svg').write_text(project(item,mobile))
  for i in range(72):
   t=i/9
   (FRAMES/f'header{suffix}-{i:03}.svg').write_text(header(t,portrait,mobile))
