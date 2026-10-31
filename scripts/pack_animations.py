@@ -2,12 +2,12 @@
 """Package rasterized vector frames into compact animations with static fallbacks."""
 from pathlib import Path
 from PIL import Image
-ROOT=Path(__file__).resolve().parents[1];FRAMES=ROOT/'preview/rendered-v3';OUT=ROOT/'assets'
+ROOT=Path(__file__).resolve().parents[1];FRAMES=ROOT/'preview/rendered-v4';OUT=ROOT/'assets'
 for name in ['header','header-mobile','lab','lab-mobile']:
- images=[Image.open(FRAMES/f'{name}-{i:03}.png').convert('RGB') for i in range(72)]
+ images=[Image.open(FRAMES/f'{name}-{i:03}.png').convert('RGB') for i in range(96 if name.startswith('lab') else 72)]
  # A shared palette avoids colour flicker and keeps the unchanged portrait compact.
  palette=images[35].quantize(colors=256,method=Image.Quantize.MEDIANCUT)
  frames=[im.quantize(palette=palette,dither=Image.Dither.NONE) for im in images]
- frames[0].save(OUT/f'{name}-v3.gif',save_all=True,append_images=frames[1:],duration=110,loop=0,optimize=True,disposal=1)
- images[-1].save(OUT/f'{name}-v3-static.png',optimize=True)
- print(name,(OUT/f'{name}-v3.gif').stat().st_size,'bytes')
+ frames[0].save(OUT/f'{name}-v4.gif',save_all=True,append_images=frames[1:],duration=62 if name.startswith('lab') else 110,loop=0,optimize=True,disposal=1)
+ images[-1].save(OUT/f'{name}-v4-static.png',optimize=True)
+ print(name,(OUT/f'{name}-v4.gif').stat().st_size,'bytes')

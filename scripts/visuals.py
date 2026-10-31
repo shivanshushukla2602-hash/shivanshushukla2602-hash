@@ -2,13 +2,13 @@
 from html import escape as e
 from datetime import date,timedelta
 import math,textwrap
-BG='#171614';PANEL='#201e1b';FG='#f5f0e7';MUTED='#b2aaa0';CORAL='#f39b80';MINT='#a8c9ad';YELLOW='#e9ce83';LILAC='#c4b7cd';LINE='#3b3731'
+BG='#111813';PANEL='#18221b';FG='#f0f5eb';MUTED='#a6b6a5';CORAL='#b7e274';MINT='#7dcca0';YELLOW='#dcecb2';LILAC='#91bda6';LINE='#304132'
 FONT='Arial,Helvetica,sans-serif'
 def text(x,y,value,size=16,color=FG,weight='normal',extra=''):
  return f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{color}" {extra}>{e(str(value))}</text>'
 def rect(x,y,w,h,fill=PANEL,stroke=LINE,rx=12):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}"/>'
 def svg(w,h,title,body):
- return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">{e(title)}</title><defs><linearGradient id="coral" x2=".7" y2="1"><stop stop-color="#ffd4b8"/><stop offset="1" stop-color="#c36954"/></linearGradient><linearGradient id="sage" x2=".7" y2="1"><stop stop-color="#d4e4c5"/><stop offset="1" stop-color="#739a7b"/></linearGradient><linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#f9e9b7"/><stop offset="1" stop-color="#b8a464"/></linearGradient></defs><style>@media(prefers-reduced-motion:reduce){{.motion{{animation:none!important;display:none}}}}</style>{rect(1,1,w-2,h-2,BG,LINE,24)}{body}</svg>'''
+ return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">{e(title)}</title><defs><linearGradient id="coral" x2=".7" y2="1"><stop stop-color="#d8efad"/><stop offset="1" stop-color="#689951"/></linearGradient><linearGradient id="sage" x2=".7" y2="1"><stop stop-color="#d4ebc5"/><stop offset="1" stop-color="#53966d"/></linearGradient><linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#e9f5cf"/><stop offset="1" stop-color="#8cb672"/></linearGradient></defs><style>@media(prefers-reduced-motion:reduce){{.motion{{animation:none!important;display:none}}}}</style>{rect(1,1,w-2,h-2,BG,LINE,24)}{body}</svg>'''
 def label(x,y,value,color=MUTED):return text(x,y,value,12,color,extra='letter-spacing="2.2"')
 def star(x,y,size,color,rotation=0):
  return f'<g transform="translate({x} {y}) rotate({rotation})">'+''.join(f'<path d="M{-size} 0H{size}" stroke="{color}" stroke-width="{size*.18}" transform="rotate({a})"/>' for a in [0,45,90,135])+'</g>'
@@ -27,8 +27,8 @@ def header(t,portrait,mobile=False):
  # A warm architectural portrait capsule, with restrained animated surroundings.
  b+=f'<defs><clipPath id="portrait"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}"/></clipPath></defs>'
  b+=f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}" fill="#33312b"/>'
- b+=f'<g clip-path="url(#portrait)"><circle cx="{px+pw*.55+math.sin(q)*12}" cy="{py+ph*.37}" r="{pw*.65}" fill="#b3b9a0"/><circle cx="{px+pw*.8}" cy="{py+ph*.8}" r="{pw*.48}" fill="#dbc5a5"/><image href="{portrait}" x="{px-20}" y="{py+19+math.sin(q)*3}" width="{pw+40}" height="{ph+65}" preserveAspectRatio="xMidYMin meet"/></g>'
- b+=f'<rect x="{px-9}" y="{py-9}" width="{pw+18}" height="{ph+18}" rx="{pw/2+9}" fill="none" stroke="#756557"/>'
+ b+=f'<g clip-path="url(#portrait)"><circle cx="{px+pw*.55+math.sin(q)*12}" cy="{py+ph*.37}" r="{pw*.65}" fill="#9fb58b"/><circle cx="{px+pw*.8}" cy="{py+ph*.8}" r="{pw*.48}" fill="#bfd5a8"/><image href="{portrait}" x="{px-20}" y="{py+19+math.sin(q)*3}" width="{pw+40}" height="{ph+65}" preserveAspectRatio="xMidYMin meet"/></g>'
+ b+=f'<rect x="{px-9}" y="{py-9}" width="{pw+18}" height="{ph+18}" rx="{pw/2+9}" fill="none" stroke="#58734c"/>'
  b+=star(px-31,py+60,22,CORAL,t*9)+star(px+pw+17,py+ph-33,32,YELLOW,-t*7)
  b+=f'<circle cx="{px-30+math.sin(q)*5}" cy="{py+ph-46+math.cos(q)*9}" r="13" fill="{MINT}"/>'
  return svg(w,h,'Shivanshu Shukla. Curiosity, put to work. Computer science student in Bengaluru, building with Java and JavaScript and practising DSA.',b)
@@ -75,7 +75,7 @@ def project(item,mobile=False):
  b+=text(23,h-26,tech,10,color,extra='letter-spacing=".5"')
  return svg(w,h,name+': '+desc+' '+kicker+'. '+tech,b)
 def coding_card(key,data,mobile=False):
- names={'leetcode':('LeetCode','Shivanshu_19','#e9ce83'),'codeforces':('Codeforces','shivanshu_19','#c4b7cd'),'gfg':('GeeksforGeeks','shivanshu19',MINT),'bruteforce':('PW IOI BruteForce','shivanshu_19',CORAL)}
+ names={'leetcode':('LeetCode','Shivanshu_19','#b7e274'),'codeforces':('Codeforces','shivanshu_19','#91bda6'),'gfg':('GeeksforGeeks','shivanshu19',MINT),'bruteforce':('PW IOI BruteForce','shivanshu_19',CORAL)}
  name,handle,color=names[key];w,h=(300,280) if mobile else (490,252);value=data.get('solved','—')
  b=text(22,38,name,21 if mobile else 25,FG,'bold',extra='letter-spacing="-.7"')+text(22,65,'@'+handle,13,MUTED)
  b+=text(18,143,value,79,color,'bold',extra='letter-spacing="-4"')+text(22,171,'unique accepted problems' if key=='codeforces' else 'problems solved',16,MUTED)
@@ -96,7 +96,7 @@ def activity(days,data,mobile=False):
  # Isometric garden: each tile represents a real public day, height follows its count.
  start=date.fromisoformat(data['as_of'])-timedelta(days=364);base=start-timedelta(days=(start.weekday()+1)%7)
  originx,originy=(103,330) if mobile else (155,290);sx,sy=(8.2,4.1) if mobile else (17,3.0)
- maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#302c27','#272420','#39342d'),('#6d8b70','#435c47','#9bbf9f'),('#a3bb87','#63764d','#d3db9c'),('#c9a378','#886950','#f1c59b'),('#dc977e','#9b6655','#f8b49a')]
+ maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#25392a','#1c2b20','#304b35'),('#33583d','#25422d','#4c8056'),('#4f8049','#365d36','#77ac60'),('#6a9d4f','#4d753a','#a0cd73'),('#8aba57','#60863e','#d2ef97')]
  for d,item in sorted(days.items()):
   if isinstance(d,str):d=date.fromisoformat(d)
   week,weekday=divmod((d-base).days,7);x=originx+week*sx-weekday*sx*.78;y=originy+week*sy+weekday*sy*2.2
@@ -104,21 +104,6 @@ def activity(days,data,mobile=False):
   b+=f'<g><title>{d.isoformat()}: {item["count"]} public contributions</title><path d="M{x:.1f} {y-z:.1f}l{a:.1f} {bb:.1f}v{z:.1f}l{-a:.1f} {-bb:.1f}Z" fill="{left}"/><path d="M{x:.1f} {y-z:.1f}l{-a:.1f} {bb:.1f}v{z:.1f}l{a:.1f} {-bb:.1f}Z" fill="{right}"/><path d="M{x:.1f} {y-z:.1f}l{a:.1f} {bb:.1f}l{-a:.1f} {bb:.1f}l{-a:.1f} {-bb:.1f}Z" fill="{top}"/></g>'
  b+=f'<path d="M34 {h-77}H{w-34}" stroke="{LINE}"/>'+text(34,h-45,'Each tile is a day. Every height comes from real activity.',14 if mobile else 17,MUTED)+text(34,h-20,'Public GitHub activity · '+data['as_of'],12,MUTED)
  return svg(w,h,'An isometric contribution garden made from '+str(data['public_contributions_365_days'])+' real public GitHub contributions over 365 days.',b)
-def lab(t,mobile=False,art=None):
- w,h=(600,670) if mobile else (1200,590);q=t/8*math.tau
- b=label(34,44,'ROOM FOR THE NEXT IDEA',CORAL)
- if art:
-  ax,ay,aw,ah=(0,155,600,465) if mobile else (310,50,890,530)
-  b+=f'<defs><linearGradient id="edgeFade"><stop stop-color="white" stop-opacity="0"/><stop offset=".22" stop-color="white"/><stop offset=".97" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><mask id="studioEdge"><rect x="{ax}" y="{ay}" width="{aw}" height="{ah}" fill="url(#edgeFade)"/></mask></defs>'
-  b+=f'<image href="{art}" x="{ax}" y="{ay}" width="{aw}" height="{ah}" preserveAspectRatio="xMidYMid meet" mask="url(#studioEdge)"/>'
- if mobile:
-  b+=text(32,103,'Always curious.',43,FG,'bold',extra='letter-spacing="-2"')+text(32,154,'Still becoming.',43,CORAL,'bold',extra='letter-spacing="-2"')
- else:
-  b+=text(32,165,'Always',62,FG,'bold',extra='letter-spacing="-3"')+text(32,231,'curious.',62,FG,'bold',extra='letter-spacing="-3"')+text(32,306,'Still',62,CORAL,'bold',extra='letter-spacing="-3"')+text(32,372,'becoming.',62,CORAL,'bold',extra='letter-spacing="-3"')
-  b+=text(34,435,'A little more understanding.',19,MUTED)+text(34,466,'Something new to make.',19,MUTED)
- b+=star(w-80,90,22,YELLOW,t*8)+star(w-90,h-90,15,MINT,-t*8)
- b+=f'<circle cx="{w*.56+math.sin(q)*12}" cy="{h-50+math.cos(q)*4}" r="6" fill="{CORAL}"/>'
- return svg(w,h,'Always curious, still becoming. An original warm miniature studio illustration, with gentle animated accents.',b)
 def footer(mobile=False):
  w,h=(600,260) if mobile else (1200,235);b=label(34,43,'GOOD CONVERSATIONS WELCOME',MINT)+text(32,112,'Let’s make something',38 if mobile else 57,FG,'bold',extra='letter-spacing="-2"')+text(32,162,'worth making.',38 if mobile else 57,CORAL,'bold',extra='letter-spacing="-2"')+text(34,h-29,'shivanshushukla2602@gmail.com',18,MUTED)+text(w-36,h-28,'↗',32,CORAL,extra='text-anchor="end"')
  return svg(w,h,'Contact Shivanshu Shukla for internships and collaboration: shivanshushukla2602@gmail.com.',b)

@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Check out profile source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install animation renderer
+        run: python3 -m pip install -r requirements.txt
       - name: Refresh public GitHub activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

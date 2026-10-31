@@ -39,9 +39,12 @@ def render(user,repos,html):
     languages=sorted({r['language'] for r in repos if not r['fork'] and r.get('language')})
     data={'source':'Unauthenticated public GitHub contribution calendar and public repository API','as_of':today.isoformat(),'public_contributions_365_days':total,'public_repositories':user['public_repos'],'original_repository_languages':languages}
     from visuals import activity
+    from animate_activity import render_animations
+    render_animations(days,data)
+    (ROOT/'assets/activity-calendar.json').write_text(json.dumps({d.isoformat():v for d,v in sorted(days.items())},indent=2)+'\n')
     return activity(days,data,False),activity(days,data,True),data
 
 def main():
     user=json.loads(fetch('https://api.github.com/users/'+USER,True));repos=json.loads(fetch('https://api.github.com/users/'+USER+'/repos?per_page=100',True));html=fetch('https://github.com/users/'+USER+'/contributions')
-    desktop,mobile,data=render(user,repos,html);(ROOT/'assets/activity-v3.svg').write_text(desktop);(ROOT/'assets/activity-mobile-v3.svg').write_text(mobile);(ROOT/'assets/activity-data.json').write_text(json.dumps(data,indent=2)+'\n');print(json.dumps(data))
+    desktop,mobile,data=render(user,repos,html);(ROOT/'assets/activity-v4.svg').write_text(desktop);(ROOT/'assets/activity-mobile-v4.svg').write_text(mobile);(ROOT/'assets/activity-data.json').write_text(json.dumps(data,indent=2)+'\n');print(json.dumps(data))
 if __name__=='__main__':main()

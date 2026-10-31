@@ -1,0 +1,12 @@
+import {chromium} from 'playwright-core';import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out=path.join(root,'preview/rendered-v4');fs.mkdirSync(out,{recursive:true});
+fs.copyFileSync(path.join(root,'scripts/studio.html'),path.join(root,'preview/studio-v4.html'));
+const vendor=path.join(root,'preview/vendor');fs.mkdirSync(vendor,{recursive:true});
+const {createRequire}=await import('node:module');const require=createRequire(import.meta.url);
+const threeBuild=process.env.THREE_BUILD_DIR||path.dirname(require.resolve('three'));
+for(const file of ['three.module.js','three.core.js'])fs.copyFileSync(path.join(threeBuild,file),path.join(vendor,file));
+const {createServer}=await import('node:http');
+const server=createServer((req,res)=>{const relative=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\/github-profile\//,'');const file=path.resolve(root,relative);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return}const mime={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript','.ttf':'font/ttf'};res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');res.end(fs.readFileSync(file))});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port;
+const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true,args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+try{const page=await browser.newPage({deviceScaleFactor:1});page.on('pageerror',e=>console.log('SCENE ERROR:',e.message));for(const [name,width,height] of [['lab',1200,590],['lab-mobile',600,670]]){await page.setViewportSize({width,height});await page.goto(origin+'/github-profile/preview/studio-v4.html'+(width===600?'?mobile':''),{waitUntil:'networkidle'});await page.waitForFunction(()=>window.sceneReady);await page.evaluate(()=>document.fonts.ready);const count=process.argv.includes('--preview')?1:96;for(let i=0;i<count;i++){await page.evaluate(i=>window.setFrame(i),i);await page.screenshot({path:path.join(out,`${name}-${String(i).padStart(3,'0')}.png`)});}console.log(`${name}: ${count} articulated 3D frames`);}}finally{await browser.close();await new Promise(resolve=>server.close(resolve))}

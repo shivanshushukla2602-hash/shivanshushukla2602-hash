@@ -6,7 +6,7 @@ The root README is the public GitHub profile. Its artwork lives in `assets/`.
 
 - Change the introduction, links and project destinations in `README.md`.
 - Change the original artwork and copy in `scripts/visuals.py`; `scripts/generate_design.py` writes the static artwork and animation frames.
-- Run `python3 -m pip install -r requirements.txt` and `npm install`, then `npm run render` to rebuild the original vectors, animated header and isometric lab. Set `CHROME_PATH` if Chrome is installed somewhere other than its normal macOS location.
+- Run `python3 -m pip install -r requirements.txt` and `npm install`, then `npm run render` to rebuild the original vectors, animated header and articulated 3D studio. The 3D scene renderer starts its own local preview server. Set `CHROME_PATH` if Chrome is installed somewhere other than its normal macOS location.
 - The GIFs are original vector-rendered animations. Each has a static fallback for reduced-motion preferences. These graphics do not depend on third-party stats-card services.
 
 ## Refresh public statistics
@@ -26,13 +26,17 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 ## Design direction
 
-Warm charcoal and ivory, with coral, sage, butter-yellow and a little muted lilac. Bold sans-serif type, a portrait capsule, short personal copy, open icon rows, simple project cards, and a contribution garden based on real activity. The animations are gentle accents around readable content. There are no terminal windows, command headings, code snippets, or neon blue panels.
+An evergreen and charcoal profile with fresh leaf-green highlights, ivory typography and clean personal copy. The portrait, skill rows, project cards and coding statistics use the same green palette.
 
-The portrait is the owner's existing photograph. The studio illustration is original generated artwork, not a photograph of the owner's workspace; it lives at `assets/studio-illustration-v3.png`. Header and studio animations have dedicated mobile layouts and static reduced-motion fallbacks.
+### Real heatmap animation
 
-Illustration generation used the built-in image-generation tool via the [imagegen skill](/Users/shivanshushukla/.codex/skills/.system/imagegen/SKILL.md). Final prompt:
+`assets/activity-v4.gif` and `assets/activity-mobile-v4.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
 
-> Use case: stylized-concept. Asset type: a wide premium editorial illustration for Shivanshu Shukla's professional GitHub README. Create an original beautifully crafted isometric miniature developer studio on a warm almost-black charcoal background (#171614), not blue. A single young adult stylized designer figure with dark hair, charcoal sweatshirt, at a sculptural walnut desk with a cream ultrawide display, compact keyboard, small leafy plant, and neat books. Monitor shows abstract colorful design shapes, no code or text. Warm tactile matte clay, brushed aluminum and walnut materials, elegant soft studio light, subtly colorful coral / sage green / butter yellow objects. Sophisticated designer collectible diorama, crisp high-detail 3D render, generous negative space on the left for later typography, scene on the right two-thirds, wide landscape 3:2. No neon, no sci-fi, no robots, no terminal, no letters or logos or watermark. Calm, human, professional and art-directed; reference is the general idea of a miniature desk scene, not a replica of anyone else's artwork.
+### Articulated working character
+
+`assets/lab-v4.gif` and `assets/lab-mobile-v4.gif` contain 96 frames of an original Three.js scene, not a still illustration with floating decorations. The seated character has articulated shoulders, elbows, wrists and fingers. He types, sways, nods and turns his head, switches to the mouse, and works with changing monitor content. Keyboard presses, screen progress and a changing activity label are synchronized to the six-second loop.
+
+The scene source is `scripts/studio-scene.mjs`; its surrounding layout is `scripts/studio.html`. The previous generated studio illustration is not used in the profile. `scripts/render_studio.mjs` renders desktop and mobile frames, and `scripts/pack_animations.py` packages them. The portrait remains the owner's existing photograph. Reduced-motion preferences select static artwork for all three animated sections.
 
 ## Suggested account settings
 
