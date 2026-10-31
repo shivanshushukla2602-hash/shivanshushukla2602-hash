@@ -27,3 +27,14 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 ## Design direction
 
 Pearl type, charcoal surfaces, warm line-work, and an animated signal through a developer workbench. The header, project cards and layout were created for Shivanshu; reference-profile artwork and biography are not copied.
+
+## Suggested account settings
+
+The profile README is published automatically by its username-matching repository. Account-level settings require their own GitHub permission. If updating them manually in **Edit profile**, use:
+
+- **Name:** Shivanshu Shukla
+- **Bio:** CS @ PW IOI · Java & JavaScript · Frontend + DSA · Learning by building. Open to internships & collaboration.
+- **Website:** https://shiv-and-shu-portfolio.vercel.app
+- **Location:** Bengaluru, India
+
+For the pinned-repository area below the README, useful choices are My-Portfolio, PyCosmos, SevaRecover, InnovateX, SpendWise-old, and Bus-Reservation-System.
