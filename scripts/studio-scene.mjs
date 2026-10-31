@@ -2,7 +2,7 @@
 import * as THREE from 'three';
 const mobile=new URLSearchParams(location.search).has('mobile');
 const width=mobile?600:1200,height=mobile?670:590;
-const scene=new THREE.Scene();scene.background=new THREE.Color('#17171a');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#0b0b0b');
 const camera=new THREE.OrthographicCamera(-4.5,4.5,3.15,-3.15,.1,100);camera.position.set(7,6.2,8);camera.lookAt(0,1.15,0);
 const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});renderer.setSize(mobile?600:830,mobile?485:575);renderer.setPixelRatio(1);renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.3;
 document.querySelector('#stage').appendChild(renderer.domElement);

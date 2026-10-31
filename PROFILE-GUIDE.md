@@ -26,15 +26,15 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 ## Design direction
 
-A coordinated multicolour profile on neutral charcoal: coral, lilac, mint, sky blue and butter yellow. The portrait headline, skill icons, individual project cards and coding statistics have distinct colour accents. The animated studio uses a lilac outfit and rug, coral headings, and several monitor colours.
+A black and warm off-white editorial profile. Personal details, project cards, coding-stat numbers, labels, borders and contact artwork use neutral colours. Multiple colours appear in the animated skill details, header ribbons, contribution bars and articulated 3D workstation. The portrait keeps its natural photographic colours.
 
 ### Multicolour heatmap animation
 
-`assets/activity-v5.gif` and `assets/activity-mobile-v5.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
+`assets/activity-v8.gif` and `assets/activity-mobile-v8.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
 
 ### Articulated working character
 
-`assets/lab-v5.gif` and `assets/lab-mobile-v5.gif` contain 96 frames of an original Three.js scene, not a still illustration with floating decorations. The seated character has articulated shoulders, elbows, wrists and fingers. He types, sways, nods and turns his head, switches to the mouse, and works with changing monitor content. Keyboard presses, screen progress and a changing activity label are synchronized to the six-second loop.
+`assets/lab-v8.gif` and `assets/lab-mobile-v8.gif` contain 96 frames of an original Three.js scene, not a still illustration with floating decorations. The seated character has articulated shoulders, elbows, wrists and fingers. He types, sways, nods and turns his head, switches to the mouse, and works with changing monitor content. Keyboard presses, screen progress and a changing activity label are synchronized to the six-second loop.
 
 The scene source is `scripts/studio-scene.mjs`; its surrounding layout is `scripts/studio.html`. The previous generated studio illustration is not used in the profile. `scripts/render_studio.mjs` renders desktop and mobile frames, and `scripts/pack_animations.py` packages them. The portrait remains the owner's existing photograph. Reduced-motion preferences select static artwork for all three animated sections.
 
@@ -51,4 +51,4 @@ For the pinned-repository area below the README, useful choices are My-Portfolio
 
 ## Introduction composition
 
-The v7 introduction is an original editorial identity: an offset rectangular portrait print with a folded colour backing, a fully readable name, a compact personal statement and four independently moving colour ribbons. The portrait and typography occupy separate areas. Desktop uses a wide name signature along the bottom; mobile moves the name above a portrait-and-copy spread. Header assets have static reduced-motion fallbacks; other sections remain on the v5 multicolour design.
+The v8 introduction is an original editorial identity: an offset rectangular portrait print with a folded colour backing, a fully readable name, a compact personal statement and four independently moving colour ribbons. The portrait and typography occupy separate areas. Desktop uses a wide off-white name signature along the bottom; mobile moves the name above a portrait-and-copy spread. Header assets have static reduced-motion fallbacks; all other cards use the black and off-white theme.

@@ -4,7 +4,7 @@ from datetime import date,timedelta
 import math
 from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets'
-BG='#17171a';FG='#f5f0ee';MUTED='#b9b2bc';ACCENT='#c7aff0';LINE='#3f3943'
+BG='#0b0b0b';FG='#eee9df';MUTED='#a9a59d';ACCENT=FG;LINE='#30302e'
 def font(size,bold=False):return ImageFont.truetype(str(OUT/'fonts'/('manrope-bold.ttf' if bold else 'manrope-regular.ttf')),size)
 def smooth(x):x=max(0,min(1,x));return x*x*(3-2*x)
 def frame(days,data,mobile=False,phase=None):
@@ -13,7 +13,7 @@ def frame(days,data,mobile=False,phase=None):
  txt(34,45,'A YEAR OF SHOWING UP',12,ACCENT)
  txt(32,98,'Progress, one day at a time.',30 if mobile else 40,FG,True)
  for i,(v,k) in enumerate([(data['public_contributions_365_days'],'contributions'),(data['public_repositories'],'public repositories'),(len(data['original_repository_languages']),'languages in repos')]):
-  x=34+i*(190 if mobile else 365);txt(x,167,v,43 if mobile else 53,['#f2a092','#9dd8bc','#f1d580'][i],True);txt(x,195,k,12 if mobile else 16,MUTED)
+  x=34+i*(190 if mobile else 365);txt(x,167,v,43 if mobile else 53,FG,True);txt(x,195,k,12 if mobile else 16,MUTED)
  start=date.fromisoformat(data['as_of'])-timedelta(days=364);base=start-timedelta(days=(start.weekday()+1)%7)
  ox,oy=(103,330) if mobile else (155,290);sx,sy=(8.2,4.1) if mobile else (17,3.0);maximum=max([v['count'] for v in days.values()]+[1])
  colors=[('#35323a','#28262e','#45414c'),('#55816c','#3c5f50','#9dd8bc'),('#567b99','#3c5974','#9bcdf2'),('#8873a6','#5f4e7a','#c7aff0'),('#ae756b','#7f504b','#f2a092')]
@@ -34,5 +34,5 @@ def render_animations(days,data):
   # Common palette keeps the stationary type and background perfectly stable.
   palette=images[46].quantize(colors=128,method=Image.Quantize.MEDIANCUT)
   frames=[im.quantize(palette=palette,dither=Image.Dither.NONE) for im in images]
-  frames[0].save(OUT/f'activity{suffix}-v5.gif',save_all=True,append_images=frames[1:],duration=83,loop=0,optimize=True,disposal=1)
-  frame(days,data,mobile).save(OUT/f'activity{suffix}-v5-static.png',optimize=True)
+  frames[0].save(OUT/f'activity{suffix}-v8.gif',save_all=True,append_images=frames[1:],duration=83,loop=0,optimize=True,disposal=1)
+  frame(days,data,mobile).save(OUT/f'activity{suffix}-v8-static.png',optimize=True)
