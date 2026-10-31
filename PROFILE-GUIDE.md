@@ -5,9 +5,9 @@ The root README is the public GitHub profile. Its artwork lives in `assets/`.
 ## Edit content
 
 - Change the introduction, links and project destinations in `README.md`.
-- Change the original artwork and copy in `scripts/generate_design.py`.
-- Run `python3 -m pip install -r requirements.txt`, then `python3 scripts/generate_design.py` to rebuild the GIF and design cards.
-- The GIF is an original code-drawn animation. It has a static fallback for reduced-motion preferences. These graphics do not depend on third-party stats-card services.
+- Change the original artwork and copy in `scripts/visuals.py`; `scripts/generate_design.py` writes the static artwork and animation frames.
+- Run `python3 -m pip install -r requirements.txt` and `npm install`, then `npm run render` to rebuild the original vectors, animated header and isometric lab. Set `CHROME_PATH` if Chrome is installed somewhere other than its normal macOS location.
+- The GIFs are original vector-rendered animations. Each has a static fallback for reduced-motion preferences. These graphics do not depend on third-party stats-card services.
 
 ## Refresh public statistics
 
@@ -26,7 +26,7 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 ## Design direction
 
-Pearl type, charcoal surfaces, warm line-work, and an animated signal through a developer workbench. The header, project cards and layout were created for Shivanshu; reference-profile artwork and biography are not copied.
+A separate midnight developer-studio identity: cyan, violet and pink signals; monospaced terminal panels; a portrait-led animated header; a connected skill map; a verified contribution orbit; and an original animated isometric robot lab. This design is independent of the portfolio website. Reference-profile artwork and biography are not copied.
 
 ## Suggested account settings
 
