@@ -2,13 +2,13 @@
 from html import escape as e
 from datetime import date,timedelta
 import math,textwrap
-BG='#111813';PANEL='#18221b';FG='#f0f5eb';MUTED='#a6b6a5';CORAL='#b7e274';MINT='#7dcca0';YELLOW='#dcecb2';LILAC='#91bda6';LINE='#304132'
+BG='#17171a';PANEL='#222125';FG='#f5f0ee';MUTED='#b9b2bc';CORAL='#f2a092';MINT='#9dd8bc';YELLOW='#f1d580';LILAC='#c7aff0';SKY='#9bcdf2';LINE='#3f3943'
 FONT='Arial,Helvetica,sans-serif'
 def text(x,y,value,size=16,color=FG,weight='normal',extra=''):
  return f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="{size}" font-weight="{weight}" fill="{color}" {extra}>{e(str(value))}</text>'
 def rect(x,y,w,h,fill=PANEL,stroke=LINE,rx=12):return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}"/>'
 def svg(w,h,title,body):
- return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">{e(title)}</title><defs><linearGradient id="coral" x2=".7" y2="1"><stop stop-color="#d8efad"/><stop offset="1" stop-color="#689951"/></linearGradient><linearGradient id="sage" x2=".7" y2="1"><stop stop-color="#d4ebc5"/><stop offset="1" stop-color="#53966d"/></linearGradient><linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#e9f5cf"/><stop offset="1" stop-color="#8cb672"/></linearGradient></defs><style>@media(prefers-reduced-motion:reduce){{.motion{{animation:none!important;display:none}}}}</style>{rect(1,1,w-2,h-2,BG,LINE,24)}{body}</svg>'''
+ return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">{e(title)}</title><defs><linearGradient id="coral" x2=".7" y2="1"><stop stop-color="#ffd8cd"/><stop offset="1" stop-color="#c97e7d"/></linearGradient><linearGradient id="sage" x2=".7" y2="1"><stop stop-color="#d4eee2"/><stop offset="1" stop-color="#73ae99"/></linearGradient><linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#faedb9"/><stop offset="1" stop-color="#c8a461"/></linearGradient></defs><style>@media(prefers-reduced-motion:reduce){{.motion{{animation:none!important;display:none}}}}</style>{rect(1,1,w-2,h-2,BG,LINE,24)}{body}</svg>'''
 def label(x,y,value,color=MUTED):return text(x,y,value,12,color,extra='letter-spacing="2.2"')
 def star(x,y,size,color,rotation=0):
  return f'<g transform="translate({x} {y}) rotate({rotation})">'+''.join(f'<path d="M{-size} 0H{size}" stroke="{color}" stroke-width="{size*.18}" transform="rotate({a})"/>' for a in [0,45,90,135])+'</g>'
@@ -16,19 +16,19 @@ def header(t,portrait,mobile=False):
  w,h=(600,760) if mobile else (1200,590);q=t/8*math.tau
  b=label(36,45,'SHIVANSHU SHUKLA')+label(w-36,45,'PERSONAL PROFILE',MUTED).replace('<text ','<text text-anchor="end" ',1)
  if mobile:
-  b+=text(32,127,'Curiosity,',64,FG,'bold',extra='letter-spacing="-3"')+text(32,194,'put to work.',64,CORAL,'bold',extra='letter-spacing="-3"')
+  b+=text(32,127,'Curiosity,',64,CORAL,'bold',extra='letter-spacing="-3"')+text(32,194,'put to work.',64,LILAC,'bold',extra='letter-spacing="-3"')
   px,py,pw,ph=172,245,256,308
   b+=text(300,608,'Shivanshu Shukla',32,FG,'bold',extra='text-anchor="middle" letter-spacing="-1"')+text(300,644,'CS student · Java & JavaScript · DSA',18,MUTED,extra='text-anchor="middle"')+text(300,711,'Bengaluru, India  /  Open to opportunities',15,MINT,extra='text-anchor="middle"')
  else:
-  b+=label(48,126,'A LITTLE ABOUT ME',CORAL)+text(42,220,'Shivanshu',102,FG,'bold',extra='letter-spacing="-6"')+text(42,324,'Shukla.',102,CORAL,'bold',extra='letter-spacing="-6"')
+  b+=label(48,126,'A LITTLE ABOUT ME',CORAL)+text(42,220,'Shivanshu',102,CORAL,'bold',extra='letter-spacing="-6"')+text(42,324,'Shukla.',102,LILAC,'bold',extra='letter-spacing="-6"')
   b+=text(48,389,'Curiosity, put to work.',25,FG)+text(48,431,'CS student. Java & JavaScript. DSA.',19,MUTED)
   b+=f'<path d="M48 484H620" stroke="{LINE}"/>'+label(48,527,'BENGALURU, INDIA')+text(620,527,'Open to opportunities ↗',16,MINT,extra='text-anchor="end"')
   px,py,pw,ph=781,108,324,400
  # A warm architectural portrait capsule, with restrained animated surroundings.
  b+=f'<defs><clipPath id="portrait"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}"/></clipPath></defs>'
  b+=f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}" fill="#33312b"/>'
- b+=f'<g clip-path="url(#portrait)"><circle cx="{px+pw*.55+math.sin(q)*12}" cy="{py+ph*.37}" r="{pw*.65}" fill="#9fb58b"/><circle cx="{px+pw*.8}" cy="{py+ph*.8}" r="{pw*.48}" fill="#bfd5a8"/><image href="{portrait}" x="{px-20}" y="{py+19+math.sin(q)*3}" width="{pw+40}" height="{ph+65}" preserveAspectRatio="xMidYMin meet"/></g>'
- b+=f'<rect x="{px-9}" y="{py-9}" width="{pw+18}" height="{ph+18}" rx="{pw/2+9}" fill="none" stroke="#58734c"/>'
+ b+=f'<g clip-path="url(#portrait)"><circle cx="{px+pw*.55+math.sin(q)*12}" cy="{py+ph*.37}" r="{pw*.65}" fill="#a3c9b8"/><circle cx="{px+pw*.8}" cy="{py+ph*.8}" r="{pw*.48}" fill="#c7b5db"/><image href="{portrait}" x="{px-20}" y="{py+19+math.sin(q)*3}" width="{pw+40}" height="{ph+65}" preserveAspectRatio="xMidYMin meet"/></g>'
+ b+=f'<rect x="{px-9}" y="{py-9}" width="{pw+18}" height="{ph+18}" rx="{pw/2+9}" fill="none" stroke="#7e6f8c"/>'
  b+=star(px-31,py+60,22,CORAL,t*9)+star(px+pw+17,py+ph-33,32,YELLOW,-t*7)
  b+=f'<circle cx="{px-30+math.sin(q)*5}" cy="{py+ph-46+math.cos(q)*9}" r="13" fill="{MINT}"/>'
  return svg(w,h,'Shivanshu Shukla. Curiosity, put to work. Computer science student in Bengaluru, building with Java and JavaScript and practising DSA.',b)
@@ -66,16 +66,16 @@ def stack(mobile=False):
 PROJECTS=[('portfolio','PERSONAL PORTFOLIO','Shivanshu Shukla','A place for my work and learning journey.','HTML · CSS · JAVASCRIPT',CORAL),('pycosmos','PERSONAL PLATFORM','PyCosmos','Making Python practice possible in a browser.','REACT · JAVASCRIPT · PYODIDE',MINT),('sevarecover','AMAZON BUILDATHON','SevaRecover','Helping people understand rejected applications.','REACT · TYPESCRIPT · PYTHON',YELLOW),('innovatex','END-SEMESTER PROJECT','InnovateX','Bringing our team and its work together.','HTML · CSS · JAVASCRIPT',LILAC),('spendwise','END-SEMESTER PROJECT','SpendWise','Exploring simpler everyday money interfaces.','HTML · CSS · FINANCE UI',CORAL),('bus','END-SEMESTER PROJECT','Bus Reservation','Connecting seat booking, records and a database.','EXPRESS · SQLITE · JAVASCRIPT',MINT)]
 def project(item,mobile=False):
  slug,kicker,name,desc,tech,color=item;w,h=(300,300) if mobile else (490,245)
- b=label(23,37,kicker,color)+text(w-24,38,'↗',25,color,extra='text-anchor="end"')
+ b=f'<rect x="1" y="28" width="4" height="54" rx="2" fill="{color}"/>'+label(23,37,kicker,color)+text(w-24,38,'↗',25,color,extra='text-anchor="end"')
  # A small visual signature, not a terminal window.
  b+=f'<circle cx="{w-45}" cy="{h-48}" r="28" fill="{color}" opacity=".1"/>'
- for i,line in enumerate(textwrap.wrap(name,18 if mobile else 25)):b+=text(22,91+i*34,line,30 if mobile else 34,FG,'bold',extra='letter-spacing="-1.2"')
+ for i,line in enumerate(textwrap.wrap(name,18 if mobile else 25)):b+=text(22,91+i*34,line,30 if mobile else 34,color,'bold',extra='letter-spacing="-1.2"')
  y=169 if mobile else 142
  for i,line in enumerate(textwrap.wrap(desc,27 if mobile else 45)):b+=text(23,y+i*23,line,16,MUTED)
  b+=text(23,h-26,tech,10,color,extra='letter-spacing=".5"')
  return svg(w,h,name+': '+desc+' '+kicker+'. '+tech,b)
 def coding_card(key,data,mobile=False):
- names={'leetcode':('LeetCode','Shivanshu_19','#b7e274'),'codeforces':('Codeforces','shivanshu_19','#91bda6'),'gfg':('GeeksforGeeks','shivanshu19',MINT),'bruteforce':('PW IOI BruteForce','shivanshu_19',CORAL)}
+ names={'leetcode':('LeetCode','Shivanshu_19',YELLOW),'codeforces':('Codeforces','shivanshu_19',SKY),'gfg':('GeeksforGeeks','shivanshu19',MINT),'bruteforce':('PW IOI BruteForce','shivanshu_19',CORAL)}
  name,handle,color=names[key];w,h=(300,280) if mobile else (490,252);value=data.get('solved','—')
  b=text(22,38,name,21 if mobile else 25,FG,'bold',extra='letter-spacing="-.7"')+text(22,65,'@'+handle,13,MUTED)
  b+=text(18,143,value,79,color,'bold',extra='letter-spacing="-4"')+text(22,171,'unique accepted problems' if key=='codeforces' else 'problems solved',16,MUTED)
@@ -96,7 +96,7 @@ def activity(days,data,mobile=False):
  # Isometric garden: each tile represents a real public day, height follows its count.
  start=date.fromisoformat(data['as_of'])-timedelta(days=364);base=start-timedelta(days=(start.weekday()+1)%7)
  originx,originy=(103,330) if mobile else (155,290);sx,sy=(8.2,4.1) if mobile else (17,3.0)
- maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#25392a','#1c2b20','#304b35'),('#33583d','#25422d','#4c8056'),('#4f8049','#365d36','#77ac60'),('#6a9d4f','#4d753a','#a0cd73'),('#8aba57','#60863e','#d2ef97')]
+ maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#35323a','#28262e','#45414c'),('#55816c','#3c5f50','#9dd8bc'),('#567b99','#3c5974','#9bcdf2'),('#8873a6','#5f4e7a','#c7aff0'),('#ae756b','#7f504b','#f2a092')]
  for d,item in sorted(days.items()):
   if isinstance(d,str):d=date.fromisoformat(d)
   week,weekday=divmod((d-base).days,7);x=originx+week*sx-weekday*sx*.78;y=originy+week*sy+weekday*sy*2.2

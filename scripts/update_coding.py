@@ -54,7 +54,7 @@ def main():
   except Exception as ex:return key,cache.get(key,{'profile':URLS[key]}),type(ex).__name__
  with ThreadPoolExecutor(max_workers=4) as pool:
   for key,data,error in pool.map(one,URLS):
-   cache[key]=data;(OUT/f'coding-{key}-v4.svg').write_text(render(key,data));(OUT/f'coding-{key}-mobile-v4.svg').write_text(render_mobile(key,data));print(json.dumps({'platform':key,'solved':data.get('solved'),'verified_on':data.get('as_of'),'refresh_error':error}))
+   cache[key]=data;(OUT/f'coding-{key}-v5.svg').write_text(render(key,data));(OUT/f'coding-{key}-mobile-v5.svg').write_text(render_mobile(key,data));print(json.dumps({'platform':key,'solved':data.get('solved'),'verified_on':data.get('as_of'),'refresh_error':error}))
  CACHE.write_text(json.dumps(cache,indent=2)+'\n')
  readme=ROOT/'README.md'
  if readme.exists():
@@ -63,7 +63,7 @@ def main():
   for key,d in cache.items():
    if 'solved' not in d:continue
    label=names[key]+' — '+str(d['solved'])+' problems solved; publicly verified '+d['as_of']+'. Open my profile.'
-   text=re.sub(r'(<img src="assets/coding-'+key+r'-v4\.svg(?:\?[^" ]*)?" alt=")[^"]*',lambda m:m.group(1)+escape(label,quote=True),text)
+   text=re.sub(r'(<img src="assets/coding-'+key+r'-v5\.svg(?:\?[^" ]*)?" alt=")[^"]*',lambda m:m.group(1)+escape(label,quote=True),text)
    rows.append('| ['+names[key]+']('+URLS[key]+') | '+str(d['solved'])+' | '+d['as_of']+' |')
   table='<!-- CODING-STATS:START -->\n<details>\n<summary><strong>View verified statistics</strong></summary>\n\n| Platform | Problems solved | Verified |\n| --- | --- | --- |\n'+'\n'.join(rows)+'\n\n</details>\n<!-- CODING-STATS:END -->'
   text=re.sub(r'<!-- CODING-STATS:START -->.*?<!-- CODING-STATS:END -->',lambda _:table,text,flags=re.S);readme.write_text(text)

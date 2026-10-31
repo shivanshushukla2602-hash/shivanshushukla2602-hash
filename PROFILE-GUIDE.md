@@ -26,15 +26,15 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 ## Design direction
 
-An evergreen and charcoal profile with fresh leaf-green highlights, ivory typography and clean personal copy. The portrait, skill rows, project cards and coding statistics use the same green palette.
+A coordinated multicolour profile on neutral charcoal: coral, lilac, mint, sky blue and butter yellow. The portrait headline, skill icons, individual project cards and coding statistics have distinct colour accents. The animated studio uses a lilac outfit and rug, coral headings, and several monitor colours.
 
-### Real heatmap animation
+### Multicolour heatmap animation
 
-`assets/activity-v4.gif` and `assets/activity-mobile-v4.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
+`assets/activity-v5.gif` and `assets/activity-mobile-v5.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
 
 ### Articulated working character
 
-`assets/lab-v4.gif` and `assets/lab-mobile-v4.gif` contain 96 frames of an original Three.js scene, not a still illustration with floating decorations. The seated character has articulated shoulders, elbows, wrists and fingers. He types, sways, nods and turns his head, switches to the mouse, and works with changing monitor content. Keyboard presses, screen progress and a changing activity label are synchronized to the six-second loop.
+`assets/lab-v5.gif` and `assets/lab-mobile-v5.gif` contain 96 frames of an original Three.js scene, not a still illustration with floating decorations. The seated character has articulated shoulders, elbows, wrists and fingers. He types, sways, nods and turns his head, switches to the mouse, and works with changing monitor content. Keyboard presses, screen progress and a changing activity label are synchronized to the six-second loop.
 
 The scene source is `scripts/studio-scene.mjs`; its surrounding layout is `scripts/studio.html`. The previous generated studio illustration is not used in the profile. `scripts/render_studio.mjs` renders desktop and mobile frames, and `scripts/pack_animations.py` packages them. The portrait remains the owner's existing photograph. Reduced-motion preferences select static artwork for all three animated sections.
 
