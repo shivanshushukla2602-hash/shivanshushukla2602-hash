@@ -14,24 +14,38 @@ def star(x,y,size,color,rotation=0):
  return f'<g transform="translate({x} {y}) rotate({rotation})">'+''.join(f'<path d="M{-size} 0H{size}" stroke="{color}" stroke-width="{size*.18}" transform="rotate({a})"/>' for a in [0,45,90,135])+'</g>'
 def header(t,portrait,mobile=False):
  w,h=(600,760) if mobile else (1200,590);q=t/8*math.tau
- b=label(36,45,'SHIVANSHU SHUKLA')+label(w-36,45,'PERSONAL PROFILE',MUTED).replace('<text ','<text text-anchor="end" ',1)
+ cx=w/2
+ b='<defs><linearGradient id="namePalette"><stop stop-color="'+CORAL+'"/><stop offset=".3" stop-color="'+YELLOW+'"/><stop offset=".6" stop-color="'+MINT+'"/><stop offset="1" stop-color="'+LILAC+'"/></linearGradient><linearGradient id="portraitBorder" x2="1" y2="1"><stop stop-color="'+CORAL+'"/><stop offset=".5" stop-color="'+SKY+'"/><stop offset="1" stop-color="'+LILAC+'"/></linearGradient><filter id="portraitShadow" x="-50%" y="-40%" width="200%" height="200%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000" flood-opacity=".5"/></filter></defs>'
+ b+=label(32,43,'SHIVANSHU SHUKLA',MUTED)+text(w-32,43,'BENGALURU, INDIA',11,MUTED,extra='text-anchor="end" letter-spacing="1.5"')
+ # The name forms the architecture; the portrait is a separate floating foreground layer.
  if mobile:
-  b+=text(32,127,'Curiosity,',64,CORAL,'bold',extra='letter-spacing="-3"')+text(32,194,'put to work.',64,LILAC,'bold',extra='letter-spacing="-3"')
-  px,py,pw,ph=172,245,256,308
-  b+=text(300,608,'Shivanshu Shukla',32,FG,'bold',extra='text-anchor="middle" letter-spacing="-1"')+text(300,644,'CS student · Java & JavaScript · DSA',18,MUTED,extra='text-anchor="middle"')+text(300,711,'Bengaluru, India  /  Open to opportunities',15,MINT,extra='text-anchor="middle"')
+  b+=text(cx+math.sin(q)*3,166,'SHIVANSHU',79,FG,'bold',extra='text-anchor="middle" textLength="540" lengthAdjust="spacingAndGlyphs"')
+  b+=text(cx-math.sin(q)*4,279,'SHUKLA',111,'url(#namePalette)','bold',extra='text-anchor="middle" textLength="510" lengthAdjust="spacingAndGlyphs"')
+  px,py,pw,ph=185,225,230,307
  else:
-  b+=label(48,126,'A LITTLE ABOUT ME',CORAL)+text(42,220,'Shivanshu',102,CORAL,'bold',extra='letter-spacing="-6"')+text(42,324,'Shukla.',102,LILAC,'bold',extra='letter-spacing="-6"')
-  b+=text(48,389,'Curiosity, put to work.',25,FG)+text(48,431,'CS student. Java & JavaScript. DSA.',19,MUTED)
-  b+=f'<path d="M48 484H620" stroke="{LINE}"/>'+label(48,527,'BENGALURU, INDIA')+text(620,527,'Open to opportunities ↗',16,MINT,extra='text-anchor="end"')
-  px,py,pw,ph=781,108,324,400
- # A warm architectural portrait capsule, with restrained animated surroundings.
+  b+=text(cx+math.sin(q)*5,253,'SHIVANSHU',157,FG,'bold',extra='text-anchor="middle" textLength="1094" lengthAdjust="spacingAndGlyphs"')
+  b+=text(cx-math.sin(q)*6,417,'SHUKLA',173,'url(#namePalette)','bold',extra='text-anchor="middle" textLength="1010" lengthAdjust="spacingAndGlyphs"')
+  px,py,pw,ph=465,134,270,306
+ rotation=math.sin(q)*2.2;lift=math.cos(q)*4
+ b+=f'<g transform="translate(0 {lift:.2f}) rotate({rotation:.2f} {cx} {py+ph/2})">'
+ b+=f'<rect x="{px-10}" y="{py+5}" width="{pw+20}" height="{ph+12}" rx="{pw/2}" fill="#28242f" stroke="{LILAC}" stroke-opacity=".3" transform="rotate(-5 {cx} {py+ph/2})"/>'
+ b+=f'<rect x="{px-3}" y="{py-3}" width="{pw+6}" height="{ph+6}" rx="{pw/2+3}" fill="#080808" stroke="url(#portraitBorder)" stroke-width="2" filter="url(#portraitShadow)"/>'
  b+=f'<defs><clipPath id="portrait"><rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}"/></clipPath></defs>'
- b+=f'<rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="{pw/2}" fill="#33312b"/>'
- b+=f'<g clip-path="url(#portrait)"><circle cx="{px+pw*.55+math.sin(q)*12}" cy="{py+ph*.37}" r="{pw*.65}" fill="#a3c9b8"/><circle cx="{px+pw*.8}" cy="{py+ph*.8}" r="{pw*.48}" fill="#c7b5db"/><image href="{portrait}" x="{px-20}" y="{py+19+math.sin(q)*3}" width="{pw+40}" height="{ph+65}" preserveAspectRatio="xMidYMin meet"/></g>'
- b+=f'<rect x="{px-9}" y="{py-9}" width="{pw+18}" height="{ph+18}" rx="{pw/2+9}" fill="none" stroke="#7e6f8c"/>'
- b+=star(px-31,py+60,22,CORAL,t*9)+star(px+pw+17,py+ph-33,32,YELLOW,-t*7)
- b+=f'<circle cx="{px-30+math.sin(q)*5}" cy="{py+ph-46+math.cos(q)*9}" r="13" fill="{MINT}"/>'
- return svg(w,h,'Shivanshu Shukla. Curiosity, put to work. Computer science student in Bengaluru, building with Java and JavaScript and practising DSA.',b)
+ b+=f'<image href="{portrait}" x="{px}" y="{py}" width="{pw}" height="{ph}" preserveAspectRatio="xMidYMid slice" clip-path="url(#portrait)"/>'
+ b+=f'<circle cx="{px+pw-12}" cy="{py+ph-30}" r="12" fill="{BG}"/><circle cx="{px+pw-12}" cy="{py+ph-30}" r="6" fill="{MINT}"/>'
+ b+='</g>'
+ # Independent motion accents remain outside the face and the descriptive copy.
+ for i,(col,xx,yy,sz) in enumerate([(CORAL,px-35,py+60,12),(SKY,px+pw+36,py+ph-70,9),(YELLOW,px-38,py+ph-30,7)]):
+  b+=star(xx+math.sin(q+i)*4,yy+math.cos(q+i)*7,sz,col,t*(6+i))
+ if mobile:
+  b+=text(cx,592,'Learning deeply.',27,FG,'bold',extra='text-anchor="middle" letter-spacing="-.7"')+text(cx,627,'Building thoughtfully.',27,MINT,'bold',extra='text-anchor="middle" letter-spacing="-.7"')
+  b+=text(cx,672,'CS @ PW IOI · Java · JavaScript · DSA',16,MUTED,extra='text-anchor="middle"')
+  b+=text(cx,723,'Open to internships & collaboration ↗',15,LILAC,extra='text-anchor="middle"')
+ else:
+  b+=text(cx,491,'Learning deeply. Building thoughtfully.',24,FG,'bold',extra='text-anchor="middle" letter-spacing="-.5"')
+  b+=text(cx,523,'CS @ PW IOI  ·  Java & JavaScript  ·  DSA',15,MUTED,extra='text-anchor="middle"')
+  b+=label(34,560,'PERSONAL SPACE',CORAL)+text(w-34,560,'Open to internships & collaboration ↗',14,MINT,extra='text-anchor="end"')
+ return svg(w,h,'Shivanshu Shukla — learning deeply, building thoughtfully. An oversized multicolour name composition, floating central portrait and animated layered frame. CS at PW IOI, Java, JavaScript and DSA.',b)
 def about(mobile=False):
  w,h=(600,515) if mobile else (1200,305)
  b=label(34,44,'THE PERSON BEHIND THE PROJECTS',CORAL)

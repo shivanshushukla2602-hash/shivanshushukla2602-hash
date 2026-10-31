@@ -48,3 +48,7 @@ The profile README is published automatically by its username-matching repositor
 - **Location:** Bengaluru, India
 
 For the pinned-repository area below the README, useful choices are My-Portfolio, PyCosmos, SevaRecover, InnovateX, SpendWise-old, and Bus-Reservation-System.
+
+## Introduction composition
+
+The v6 header uses oversized name typography behind a floating central portrait, a layered capsule frame, a multicolour surname, independent accent motion and short descriptive copy. It takes the reference’s broad typographic direction while using original layout proportions, animation, colours and the owner's portrait. Dedicated mobile artwork keeps the headline, portrait and copy inside the frame. Header assets have static reduced-motion fallbacks; other sections remain on the v5 multicolour design.

@@ -4,7 +4,7 @@ from pathlib import Path
 import base64
 from visuals import header,about,stack,project,footer,PROJECTS
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'assets';FRAMES=ROOT/'preview/frames-v5';FRAMES.mkdir(parents=True,exist_ok=True)
-portrait='data:image/png;base64,'+base64.b64encode((OUT/'portrait.png').read_bytes()).decode()
+portrait='data:image/jpeg;base64,'+base64.b64encode((OUT/'shivanshu-github-avatar.jpg').read_bytes()).decode()
 for mobile in [False,True]:
  suffix='-mobile' if mobile else ''
  for name,fn in [('about',about),('stack',stack),('footer',footer)]: (OUT/f'{name}{suffix}-v5.svg').write_text(fn(mobile))
