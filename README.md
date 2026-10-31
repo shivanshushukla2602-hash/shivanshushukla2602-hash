@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/header-mobile-v6-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-v6-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/header-mobile-v6.gif" />
-  <img src="assets/header-v6.gif" alt="Shivanshu Shukla — CS student in Bengaluru, building with Java and JavaScript and practising DSA. An oversized typographic introduction with a floating central portrait, a multicolour name, layered frame and animated accents." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/header-mobile-v7-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-v7-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/header-mobile-v7.gif" />
+  <img src="assets/header-v7.gif" alt="Shivanshu Shukla — CS student in Bengaluru, building with Java and JavaScript and practising DSA. An original editorial introduction with an offset rectangular portrait, a fully readable name and four animated colour ribbons." width="100%" />
 </picture>
 
 <p align="center">

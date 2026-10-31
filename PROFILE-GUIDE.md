@@ -51,4 +51,4 @@ For the pinned-repository area below the README, useful choices are My-Portfolio
 
 ## Introduction composition
 
-The v6 header uses oversized name typography behind a floating central portrait, a layered capsule frame, a multicolour surname, independent accent motion and short descriptive copy. It takes the reference’s broad typographic direction while using original layout proportions, animation, colours and the owner's portrait. Dedicated mobile artwork keeps the headline, portrait and copy inside the frame. Header assets have static reduced-motion fallbacks; other sections remain on the v5 multicolour design.
+The v7 introduction is an original editorial identity: an offset rectangular portrait print with a folded colour backing, a fully readable name, a compact personal statement and four independently moving colour ribbons. The portrait and typography occupy separate areas. Desktop uses a wide name signature along the bottom; mobile moves the name above a portrait-and-copy spread. Header assets have static reduced-motion fallbacks; other sections remain on the v5 multicolour design.

@@ -11,7 +11,7 @@ for name in ['header','header-mobile','lab','lab-mobile']:
  # A shared palette avoids colour flicker and keeps the unchanged portrait compact.
  palette=images[35].quantize(colors=256,method=Image.Quantize.MEDIANCUT)
  frames=[im.quantize(palette=palette,dither=Image.Dither.NONE) for im in images]
- version='v6' if name.startswith('header') else 'v5'
+ version='v7' if name.startswith('header') else 'v5'
  frames[0].save(OUT/f'{name}-{version}.gif',save_all=True,append_images=frames[1:],duration=62 if name.startswith('lab') else 110,loop=0,optimize=True,disposal=1)
  images[-1].save(OUT/f'{name}-{version}-static.png',optimize=True)
  print(name,(OUT/f'{name}-{version}.gif').stat().st_size,'bytes')
