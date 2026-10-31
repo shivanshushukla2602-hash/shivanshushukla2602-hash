@@ -43,5 +43,5 @@ def render(user,repos,html):
 
 def main():
     user=json.loads(fetch('https://api.github.com/users/'+USER,True));repos=json.loads(fetch('https://api.github.com/users/'+USER+'/repos?per_page=100',True));html=fetch('https://github.com/users/'+USER+'/contributions')
-    desktop,mobile,data=render(user,repos,html);(ROOT/'assets/activity-v2.svg').write_text(desktop);(ROOT/'assets/activity-mobile-v2.svg').write_text(mobile);(ROOT/'assets/activity-data.json').write_text(json.dumps(data,indent=2)+'\n');print(json.dumps(data))
+    desktop,mobile,data=render(user,repos,html);(ROOT/'assets/activity-v3.svg').write_text(desktop);(ROOT/'assets/activity-mobile-v3.svg').write_text(mobile);(ROOT/'assets/activity-data.json').write_text(json.dumps(data,indent=2)+'\n');print(json.dumps(data))
 if __name__=='__main__':main()

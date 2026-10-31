@@ -26,7 +26,13 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 ## Design direction
 
-A separate midnight developer-studio identity: cyan, violet and pink signals; monospaced terminal panels; a portrait-led animated header; a connected skill map; a verified contribution orbit; and an original animated isometric robot lab. This design is independent of the portfolio website. Reference-profile artwork and biography are not copied.
+Warm charcoal and ivory, with coral, sage, butter-yellow and a little muted lilac. Bold sans-serif type, a portrait capsule, short personal copy, open icon rows, simple project cards, and a contribution garden based on real activity. The animations are gentle accents around readable content. There are no terminal windows, command headings, code snippets, or neon blue panels.
+
+The portrait is the owner's existing photograph. The studio illustration is original generated artwork, not a photograph of the owner's workspace; it lives at `assets/studio-illustration-v3.png`. Header and studio animations have dedicated mobile layouts and static reduced-motion fallbacks.
+
+Illustration generation used the built-in image-generation tool via the [imagegen skill](/Users/shivanshushukla/.codex/skills/.system/imagegen/SKILL.md). Final prompt:
+
+> Use case: stylized-concept. Asset type: a wide premium editorial illustration for Shivanshu Shukla's professional GitHub README. Create an original beautifully crafted isometric miniature developer studio on a warm almost-black charcoal background (#171614), not blue. A single young adult stylized designer figure with dark hair, charcoal sweatshirt, at a sculptural walnut desk with a cream ultrawide display, compact keyboard, small leafy plant, and neat books. Monitor shows abstract colorful design shapes, no code or text. Warm tactile matte clay, brushed aluminum and walnut materials, elegant soft studio light, subtly colorful coral / sage green / butter yellow objects. Sophisticated designer collectible diorama, crisp high-detail 3D render, generous negative space on the left for later typography, scene on the right two-thirds, wide landscape 3:2. No neon, no sci-fi, no robots, no terminal, no letters or logos or watermark. Calm, human, professional and art-directed; reference is the general idea of a miniature desk scene, not a replica of anyone else's artwork.
 
 ## Suggested account settings
 
