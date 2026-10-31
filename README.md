@@ -92,10 +92,10 @@ Actual public-profile screenshots, captured **1 November 2026**. Click an image 
 
 | Platform | Problems solved | Verified |
 | --- | --- | --- |
-| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 36 | 2026-11-01 |
-| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-11-01 |
-| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 94 | 2026-11-01 |
-| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 119 | 2026-11-01 |
+| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 36 | 2026-10-31 |
+| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-10-31 |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 94 | 2026-10-31 |
+| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 119 | 2026-10-31 |
 
 </details>
 <!-- CODING-STATS:END -->
