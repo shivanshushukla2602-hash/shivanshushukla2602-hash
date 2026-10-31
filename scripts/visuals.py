@@ -114,7 +114,7 @@ def activity(days,data,mobile=False):
  # Isometric garden: each tile represents a real public day, height follows its count.
  start=date.fromisoformat(data['as_of'])-timedelta(days=364);base=start-timedelta(days=(start.weekday()+1)%7)
  originx,originy=(103,330) if mobile else (155,290);sx,sy=(8.2,4.1) if mobile else (17,3.0)
- maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#35323a','#28262e','#45414c'),('#55816c','#3c5f50','#9dd8bc'),('#567b99','#3c5974','#9bcdf2'),('#8873a6','#5f4e7a','#c7aff0'),('#ae756b','#7f504b','#f2a092')]
+ maxcount=max([v['count'] for v in days.values()]+[1]);palette=[('#1b2920','#142018','#26372b'),('#17452a','#10351f','#2f7542'),('#20773c','#17592d','#48a455'),('#2b9d46','#207634','#6bd36b'),('#4bb750','#368d3a','#9be788')]
  for d,item in sorted(days.items()):
   if isinstance(d,str):d=date.fromisoformat(d)
   week,weekday=divmod((d-base).days,7);x=originx+week*sx-weekday*sx*.78;y=originy+week*sy+weekday*sy*2.2

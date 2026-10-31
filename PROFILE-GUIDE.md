@@ -28,7 +28,7 @@ The four coding destinations are LeetCode `Shivanshu_19`, Codeforces `shivanshu_
 
 A black and warm off-white editorial profile. Personal details, project cards, coding-stat numbers, labels, borders and contact artwork use neutral colours. Multiple colours appear in the animated skill details, header ribbons, contribution bars and articulated 3D workstation. The portrait keeps its natural photographic colours.
 
-### Multicolour heatmap animation
+### Contribution heatmap animation
 
 `assets/activity-v8.gif` and `assets/activity-mobile-v8.gif` are rendered from 72 frames, with identical pause frames merged for a smaller download. They replay the growth of the owner's actual public contribution heights, then return to the beginning. The numerical totals stay fixed. The source dates and counts live in `assets/activity-calendar.json`; the animation never adds fictitious activity. A daily workflow regenerates the GIFs and static reduced-motion versions using `scripts/animate_activity.py` and Pillow.
 
@@ -49,6 +49,16 @@ The profile README is published automatically by its username-matching repositor
 
 For the pinned-repository area below the README, useful choices are My-Portfolio, PyCosmos, SevaRecover, InnovateX, SpendWise-old, and Bus-Reservation-System.
 
-## Introduction composition
+## Kinetic identity header
 
-The v8 introduction is an original editorial identity: an offset rectangular portrait print with a folded colour backing, a fully readable name, a compact personal statement and four independently moving colour ribbons. The portrait and typography occupy separate areas. Desktop uses a wide off-white name signature along the bottom; mobile moves the name above a portrait-and-copy spread. Header assets have static reduced-motion fallbacks; all other cards use the black and off-white theme.
+The selected v9 direction combines off-white Sora typography, a short Fraunces italic line, and a custom iridescent three-dimensional sculpture. It uses no portrait, framed photo card, ribbons drawn under a slogan, or text hidden behind a photograph. `scripts/kinetic-sculpture.mjs` builds the original parametric loop and animates its orientation. `scripts/kinetic-header.html` provides distinct desktop and mobile layouts. `scripts/render_kinetic_header.mjs` renders 120 frames; `scripts/pack_kinetic_header.py` packages the six-second GIF loops and static fallbacks. Three.js's RoomEnvironment helper retains its upstream MIT license in `scripts/Three-LICENSE.txt`.
+
+## Actual coding screenshots
+
+The problem-solving section uses actual GeeksforGeeks and PW IOI BruteForce screenshots captured on 1 November 2026, including statistics, activity heatmaps and solved-question lists. The source URLs and capture status are recorded in `assets/coding-screenshot-sources.json`. These images are dated snapshots; the text statistics below still refresh daily.
+
+LeetCode and Codeforces returned HTTP 403 browser security-verification pages. Their screenshots have not been fabricated or replaced with styled mock-ups. The owner can supply screenshots from a signed-in browser to finish those two entries. Do not replace genuine screenshots with daily generated stats cards.
+
+## Green contribution heatmap
+
+Only the contribution bars use the dark-to-bright green scale, matching the requested activity-heatmap style. The animation still grows from real daily counts and preserves fixed snapshot totals. Both the daily GIF renderer and static SVG fallback use the green palette; the scheduled refresh preserves it.

@@ -16,12 +16,12 @@ def frame(days,data,mobile=False,phase=None):
   x=34+i*(190 if mobile else 365);txt(x,167,v,43 if mobile else 53,FG,True);txt(x,195,k,12 if mobile else 16,MUTED)
  start=date.fromisoformat(data['as_of'])-timedelta(days=364);base=start-timedelta(days=(start.weekday()+1)%7)
  ox,oy=(103,330) if mobile else (155,290);sx,sy=(8.2,4.1) if mobile else (17,3.0);maximum=max([v['count'] for v in days.values()]+[1])
- colors=[('#35323a','#28262e','#45414c'),('#55816c','#3c5f50','#9dd8bc'),('#567b99','#3c5974','#9bcdf2'),('#8873a6','#5f4e7a','#c7aff0'),('#ae756b','#7f504b','#f2a092')]
+ colors=[('#1b2920','#142018','#26372b'),('#17452a','#10351f','#2f7542'),('#20773c','#17592d','#48a455'),('#2b9d46','#207634','#6bd36b'),('#4bb750','#368d3a','#9be788')]
  for ds,item in sorted(days.items()):
   day=date.fromisoformat(ds) if isinstance(ds,str) else ds;week,weekday=divmod((day-base).days,7);x=ox+week*sx-weekday*sx*.78;y=oy+week*sy+weekday*sy*2.2
   growth=1 if phase is None else smooth((phase/.56*1.3-week/53*.36)/.72)*(1-smooth((phase-.88)/.12))
   z=4+(math.log1p(item['count'])/math.log1p(maximum)*85*growth if item['count'] else 0);left,right,top=colors[min(4,item['level'])];a=sx*.78;b=sy*1.8
-  if phase is not None and item['count'] and abs(week/53-(phase*1.5)%1)<.025:top='#fff0c3'
+  if phase is not None and item['count'] and abs(week/53-(phase*1.5)%1)<.025:top='#c4ffc0'
   d.polygon([(x,y-z),(x+a,y+b-z),(x+a,y+b),(x,y)],fill=left);d.polygon([(x,y-z),(x-a,y+b-z),(x-a,y+b),(x,y)],fill=right);d.polygon([(x,y-z),(x+a,y+b-z),(x,y+2*b-z),(x-a,y+b-z)],fill=top)
  d.line((34,h-77,w-34,h-77),fill=LINE)
  txt(34,h-45,'Animated replay of your real contribution history.',14 if mobile else 17,MUTED)
@@ -34,5 +34,5 @@ def render_animations(days,data):
   # Common palette keeps the stationary type and background perfectly stable.
   palette=images[46].quantize(colors=128,method=Image.Quantize.MEDIANCUT)
   frames=[im.quantize(palette=palette,dither=Image.Dither.NONE) for im in images]
-  frames[0].save(OUT/f'activity{suffix}-v8.gif',save_all=True,append_images=frames[1:],duration=83,loop=0,optimize=True,disposal=1)
-  frame(days,data,mobile).save(OUT/f'activity{suffix}-v8-static.png',optimize=True)
+  frames[0].save(OUT/f'activity{suffix}-v9.gif',save_all=True,append_images=frames[1:],duration=83,loop=0,optimize=True,disposal=1)
+  frame(days,data,mobile).save(OUT/f'activity{suffix}-v9-static.png',optimize=True)

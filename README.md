@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/header-mobile-v8-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-v8-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/header-mobile-v8.gif" />
-  <img src="assets/header-v8.gif" alt="Shivanshu Shukla — CS student in Bengaluru, building with Java and JavaScript and practising DSA. An original black-and-off-white editorial introduction with an offset portrait, a fully readable name and four animated colour ribbons." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/header-mobile-v9-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/header-v9-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/header-mobile-v9.gif" />
+  <img src="assets/header-v9.gif" alt="Shivanshu Shukla — CS student in Bengaluru, building with Java and JavaScript and practising DSA. An original kinetic identity: refined off-white typography beside a rotating iridescent three-dimensional ribbon sculpture." width="100%" />
 </picture>
 
 <p align="center">
@@ -65,16 +65,26 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-<table>
-<tr>
-<td width="50%"><a href="https://leetcode.com/u/Shivanshu_19/"><picture><source media="(max-width: 767px)" srcset="assets/coding-leetcode-mobile-v8.svg" /><img src="assets/coding-leetcode-v8.svg" alt="LeetCode — 36 problems solved; publicly verified 2026-10-31. Open my profile." width="100%" /></picture></a></td>
-<td width="50%"><a href="https://codeforces.com/profile/shivanshu_19"><picture><source media="(max-width: 767px)" srcset="assets/coding-codeforces-mobile-v8.svg" /><img src="assets/coding-codeforces-v8.svg" alt="Codeforces — 66 problems solved; publicly verified 2026-10-31. Open my profile." width="100%" /></picture></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><picture><source media="(max-width: 767px)" srcset="assets/coding-gfg-mobile-v8.svg" /><img src="assets/coding-gfg-v8.svg" alt="GeeksforGeeks — 94 problems solved; publicly verified 2026-10-31. Open my profile." width="100%" /></picture></a></td>
-<td width="50%"><a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><picture><source media="(max-width: 767px)" srcset="assets/coding-bruteforce-mobile-v8.svg" /><img src="assets/coding-bruteforce-v8.svg" alt="PW IOI BruteForce — 119 problems solved; publicly verified 2026-10-31. Open my profile." width="100%" /></picture></a></td>
-</tr>
-</table>
+Actual public-profile screenshots, captured **1 November 2026**. Click an image to open the live profile.
+
+### GeeksforGeeks
+
+<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-summary-2026-11-01.png" alt="Actual GeeksforGeeks profile screenshot for Shivanshu: 94 problems solved, coding score 210, difficulty breakdown and submission heatmap. Captured 1 November 2026." width="100%" /></a>
+
+<details>
+<summary><strong>See the solved-question list</strong></summary>
+
+<a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-questions-2026-11-01.png" alt="Actual GeeksforGeeks solved-question list showing Activity Selection, Police and Thieves, Fractional Knapsack, Maximum Triplet product and other accepted problems." width="100%" /></a>
+
+</details>
+
+### PW IOI BruteForce
+
+<a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-profile-2026-11-01.png" alt="Actual PW IOI BruteForce profile screenshot for shivanshu_19: 119 solved, difficulty breakdown, ranks, streaks, activity heatmap and recent solved questions. Captured 1 November 2026." width="100%" /></a>
+
+[LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19)
+
+<sub>Screenshots are dated snapshots. Verified statistics for all four platforms are available below.</sub>
 
 <!-- CODING-STATS:START -->
 <details>
@@ -82,10 +92,10 @@ Data structures, algorithms, and a little more understanding with every problem.
 
 | Platform | Problems solved | Verified |
 | --- | --- | --- |
-| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 36 | 2026-10-31 |
-| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-10-31 |
-| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 94 | 2026-10-31 |
-| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 119 | 2026-10-31 |
+| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 36 | 2026-11-01 |
+| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-11-01 |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 94 | 2026-11-01 |
+| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 119 | 2026-11-01 |
 
 </details>
 <!-- CODING-STATS:END -->
@@ -96,7 +106,7 @@ Data structures, algorithms, and a little more understanding with every problem.
 
 ## Consistency, in perspective
 
-<a href="https://github.com/shivanshushukla2602-hash?tab=overview"><picture><source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/activity-mobile-v8-static.png" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/activity-v8-static.png" /><source media="(max-width: 767px)" srcset="assets/activity-mobile-v8.gif" /><img src="assets/activity-v8.gif" alt="An animated multicolour contribution heatmap: bars grow from real daily GitHub contribution counts, followed by a scanning highlight. Snapshot totals stay fixed." width="100%" /></picture></a>
+<a href="https://github.com/shivanshushukla2602-hash?tab=overview"><picture><source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/activity-mobile-v9-static.png" /><source media="(prefers-reduced-motion: reduce)" srcset="assets/activity-v9-static.png" /><source media="(max-width: 767px)" srcset="assets/activity-mobile-v9.gif" /><img src="assets/activity-v9.gif" alt="An animated green contribution heatmap: bars grow from real daily GitHub contribution counts, followed by a scanning highlight. Snapshot totals stay fixed." width="100%" /></picture></a>
 
 <sub>This card refreshes automatically from public GitHub data. Repository languages reflect published code, not a proficiency score.</sub>
 

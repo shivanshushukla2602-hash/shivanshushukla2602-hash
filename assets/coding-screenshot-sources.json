@@ -1,0 +1,25 @@
+{
+  "captured_on": "2026-11-01",
+  "method": "Genuine browser screenshots of public pages; no stats or page content changed. GFG captures exclude the unrelated sidebar.",
+  "geeksforgeeks": {
+    "source": "https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity",
+    "screenshots": [
+      "coding-gfg-summary-2026-11-01.png",
+      "coding-gfg-questions-2026-11-01.png"
+    ]
+  },
+  "bruteforce": {
+    "source": "https://bruteforce.pwioi.com/profile/shivanshu_19",
+    "screenshots": [
+      "coding-bruteforce-profile-2026-11-01.png"
+    ]
+  },
+  "leetcode": {
+    "source": "https://leetcode.com/u/Shivanshu_19/",
+    "screenshot_status": "Not captured: HTTP 403 security verification"
+  },
+  "codeforces": {
+    "source": "https://codeforces.com/profile/shivanshu_19",
+    "screenshot_status": "Not captured: HTTP 403 security verification"
+  }
+}
