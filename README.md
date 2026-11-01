@@ -104,13 +104,16 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-<p align="center"><a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-panel-owner-2026-11-01.png" alt="Actual LeetCode screenshot supplied by Shivanshu: 37 solved — Easy 21, Medium 15, Hard 1; 1 attempting." width="824" /></a></p>
-
-<a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-panel-owner-2026-11-01.png" alt="Actual Codeforces screenshot supplied by Shivanshu: green activity heatmap, 68 problems solved for all time and the last year, and an 18-day maximum streak." width="100%" /></a>
-
-<p align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-panel-2026-11-01.png" alt="Actual GeeksforGeeks Problems Overview panel: 94 solved — Basic 25, Easy 48, Medium 20, Hard 1, School 0." width="480" /></a></p>
-
-<a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-panel-2026-11-01.png" alt="Actual BruteForce Problem Solving Stats panel: 119 solved — Easy 84, Medium 32 and Hard 3, with the platform's original progress gauges." width="100%" /></a>
+<table>
+<tr>
+<td width="50%" align="center"><a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-grid-v2.png" alt="LeetCode: 37 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
+<td width="50%" align="center"><a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-grid-v2.png" alt="Codeforces: 68 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
+</tr>
+<tr>
+<td width="50%" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-grid-v2.png" alt="GeeksforGeeks: 94 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
+<td width="50%" align="center"><a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-grid-v2.png" alt="BruteForce: 119 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
+</tr>
+</table>
 
 <sub>Actual platform screenshots: LeetCode and Codeforces supplied by me; GFG and BruteForce captured from my public profiles. Screenshots are snapshots and do not refresh automatically.</sub>
 
