@@ -104,15 +104,15 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-<a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-chart-v1.svg" alt="LeetCode — 37 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
+<p align="center"><a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-panel-owner-2026-11-01.png" alt="Actual LeetCode screenshot supplied by Shivanshu: 37 solved — Easy 21, Medium 15, Hard 1; 1 attempting." width="824" /></a></p>
 
-<a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-chart-v1.svg" alt="Codeforces — 66 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
+<a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-panel-owner-2026-11-01.png" alt="Actual Codeforces screenshot supplied by Shivanshu: green activity heatmap, 68 problems solved for all time and the last year, and an 18-day maximum streak." width="100%" /></a>
 
 <p align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-panel-2026-11-01.png" alt="Actual GeeksforGeeks Problems Overview panel: 94 solved — Basic 25, Easy 48, Medium 20, Hard 1, School 0." width="480" /></a></p>
 
 <a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-panel-2026-11-01.png" alt="Actual BruteForce Problem Solving Stats panel: 119 solved — Easy 84, Medium 32 and Hard 3, with the platform's original progress gauges." width="100%" /></a>
 
-<sub>GFG and BruteForce: actual platform screenshots captured 1 November 2026. LeetCode and Codeforces: verified-data charts; these platforms blocked screenshot capture.</sub>
+<sub>Actual platform screenshots: LeetCode and Codeforces supplied by me; GFG and BruteForce captured from my public profiles. Screenshots are snapshots and do not refresh automatically.</sub>
 
 <details>
 <summary><strong>Full profiles, activity and recent solved questions</strong></summary>
