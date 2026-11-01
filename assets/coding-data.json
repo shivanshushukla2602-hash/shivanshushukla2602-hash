@@ -13,6 +13,10 @@
   "codeforces": {
     "solved": 66,
     "submissions": 122,
+    "rating_distribution": {
+      "800": 58,
+      "900": 8
+    },
     "source": "https://codeforces.com/api/user.status?handle=shivanshu_19",
     "as_of": "2026-11-01",
     "profile": "https://codeforces.com/profile/shivanshu_19"

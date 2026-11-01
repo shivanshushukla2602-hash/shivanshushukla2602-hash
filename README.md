@@ -65,7 +65,15 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-Solved-problem panels captured directly from the platforms on **1 November 2026**.
+LeetCode and Codeforces use **verified-data charts**. GFG and BruteForce show **actual platform screenshots** captured on 1 November 2026.
+
+### LeetCode
+
+<a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-chart-v1.svg" alt="LeetCode — 36 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
+
+### Codeforces
+
+<a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-chart-v1.svg" alt="Codeforces — 66 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
 
 ### GeeksforGeeks
 
@@ -74,8 +82,6 @@ Solved-problem panels captured directly from the platforms on **1 November 2026*
 ### PW IOI BruteForce
 
 <a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-panel-2026-11-01.png" alt="Actual BruteForce Problem Solving Stats panel: 119 solved — Easy 84, Medium 32 and Hard 3, with the platform's original progress gauges." width="100%" /></a>
-
-[LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19)
 
 <details>
 <summary><strong>Full profiles, activity and recent solved questions</strong></summary>

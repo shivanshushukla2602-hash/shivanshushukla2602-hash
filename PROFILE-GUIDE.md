@@ -57,7 +57,7 @@ The selected v9 direction combines off-white Sora typography, a short Fraunces i
 
 The problem-solving section uses actual GeeksforGeeks and PW IOI BruteForce screenshots captured on 1 November 2026, including statistics, activity heatmaps and solved-question lists. The source URLs and capture status are recorded in `assets/coding-screenshot-sources.json`. These images are dated snapshots; the text statistics below still refresh daily.
 
-LeetCode and Codeforces returned HTTP 403 browser security-verification pages. Their screenshots have not been fabricated or replaced with styled mock-ups. The owner can supply screenshots from a signed-in browser to finish those two entries. Do not replace genuine screenshots with daily generated stats cards.
+LeetCode and Codeforces returned HTTP 403 browser security-verification pages. Their screenshots have not been fabricated or replaced with styled mock-ups. The owner approved clearly labelled verified-data charts for those two entries. The genuine screenshots for GFG and BruteForce remain separate and must not be replaced with generated cards.
 
 ## Green contribution heatmap
 
@@ -65,4 +65,8 @@ Only the contribution bars use the dark-to-bright green scale, matching the requ
 
 ## Compact solved-problem panels
 
-The main problem-solving section now shows only the original GeeksforGeeks Problems Overview donut and BruteForce Problem Solving Stats gauges. These are native browser captures of the exact statistics panels, at 2× resolution. Full profile and solved-question screenshots remain in a collapsed details block. LeetCode and Codeforces still need owner-supplied screenshots because their public browser pages require security verification; no replacement graphic is presented as a platform screenshot.
+The main problem-solving section now shows only the original GeeksforGeeks Problems Overview donut and BruteForce Problem Solving Stats gauges. These are native browser captures of the exact statistics panels, at 2× resolution. Full profile and solved-question screenshots remain in a collapsed details block. LeetCode and Codeforces appear above these screenshots as approved verified-data charts, explicitly distinguished from platform screenshots.
+
+## Approved verified-data charts
+
+The owner selected verified-data charts for LeetCode and Codeforces. These are explicitly labelled in the README and within the images, not presented as native platform screenshots. `scripts/verified_coding_charts.py` renders a LeetCode difficulty donut and green Codeforces rating-distribution bars. The Codeforces distribution deduplicates accepted problems before grouping their official problem ratings; it does not invent a user contest rating or treat unique problems divided by submissions as an acceptance rate. Both distributions must sum to the verified solved count. `scripts/update_coding.py` refreshes these two charts daily while preserving the genuine GFG and BruteForce screenshots.

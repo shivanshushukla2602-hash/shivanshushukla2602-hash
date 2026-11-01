@@ -30,8 +30,14 @@ def fetch(key):
  if key=='codeforces':
   d=json.loads(get('https://codeforces.com/api/user.status?handle=shivanshu_19'))
   if d['status']!='OK':raise ValueError('Codeforces did not return OK')
-  subs=d['result'];solved={(r['problem'].get('contestId'),r['problem']['index']) for r in subs if r.get('verdict')=='OK'}
-  return {'solved':len(solved),'submissions':len(subs),'source':'https://codeforces.com/api/user.status?handle=shivanshu_19'}
+  subs=d['result'];solved={}
+  for r in subs:
+   if r.get('verdict')=='OK':
+    problem=r['problem'];solved[(problem.get('contestId'),problem['index'])]=problem
+  distribution={}
+  for problem in solved.values():
+   rating=str(problem.get('rating','unrated'));distribution[rating]=distribution.get(rating,0)+1
+  return {'solved':len(solved),'submissions':len(subs),'rating_distribution':distribution,'source':'https://codeforces.com/api/user.status?handle=shivanshu_19'}
  s=normalized(get(URLS[key]))
  if ('shivanshu19' if key=='gfg' else 'shivanshu_19') not in s.lower():raise ValueError('Public profile identity not found')
  if key=='gfg':
@@ -42,6 +48,7 @@ def fetch(key):
  d,_=json.JSONDecoder().raw_decode(s[m.end():])
  return {'solved':d['totalSolved'],'breakdown':{k:d[k]['solved'] for k in ['easy','medium','hard']},'source':URLS[key]}
 from visuals import coding_card
+from verified_coding_charts import render as render_verified_chart
 
 def render(key,data):return coding_card(key,data,False)
 def render_mobile(key,data):return coding_card(key,data,True)
@@ -55,6 +62,8 @@ def main():
  with ThreadPoolExecutor(max_workers=4) as pool:
   for key,data,error in pool.map(one,URLS):
    cache[key]=data;(OUT/f'coding-{key}-v8.svg').write_text(render(key,data));(OUT/f'coding-{key}-mobile-v8.svg').write_text(render_mobile(key,data));print(json.dumps({'platform':key,'solved':data.get('solved'),'verified_on':data.get('as_of'),'refresh_error':error}))
+ for key in ['leetcode','codeforces']:
+  (OUT/f'coding-{key}-chart-v1.svg').write_text(render_verified_chart(key,cache[key]))
  CACHE.write_text(json.dumps(cache,indent=2)+'\n')
  readme=ROOT/'README.md'
  if readme.exists():
@@ -64,6 +73,8 @@ def main():
    if 'solved' not in d:continue
    label=names[key]+' — '+str(d['solved'])+' problems solved; publicly verified '+d['as_of']+'. Open my profile.'
    text=re.sub(r'(<img src="assets/coding-'+key+r'-v8\.svg(?:\?[^" ]*)?" alt=")[^"]*',lambda m:m.group(1)+escape(label,quote=True),text)
+   if key in ['leetcode','codeforces']:
+    text=re.sub(r'(<img src="assets/coding-'+key+r'-chart-v1\.svg" alt=")[^"]*',lambda m:m.group(1)+escape(label+' Verified-data chart, not a platform screenshot.',quote=True),text)
    rows.append('| ['+names[key]+']('+URLS[key]+') | '+str(d['solved'])+' | '+d['as_of']+' |')
   table='<!-- CODING-STATS:START -->\n<details>\n<summary><strong>View verified statistics</strong></summary>\n\n| Platform | Problems solved | Verified |\n| --- | --- | --- |\n'+'\n'.join(rows)+'\n\n</details>\n<!-- CODING-STATS:END -->'
   text=re.sub(r'<!-- CODING-STATS:START -->.*?<!-- CODING-STATS:END -->',lambda _:table,text,flags=re.S);readme.write_text(text)
