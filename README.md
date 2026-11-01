@@ -65,7 +65,7 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-<picture><source media="(max-width: 767px)" srcset="assets/coding-overview-mobile-v1.svg" /><img src="assets/coding-overview-v1.svg" alt="Verified solved totals: LeetCode 36, Codeforces 66, GeeksforGeeks 94, BruteForce 119. Separate platform counts, refreshed daily." width="100%" /></picture>
+<picture><source media="(max-width: 767px)" srcset="assets/coding-overview-mobile-v1.svg" /><img src="assets/coding-overview-v1.svg" alt="Verified solved totals: leetcode 37, codeforces 66, gfg 94, bruteforce 119. Separate platform counts, refreshed daily." width="100%" /></picture>
 
 [LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19) · [GeeksforGeeks ↗](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) · [BruteForce ↗](https://bruteforce.pwioi.com/profile/shivanshu_19)
 
@@ -76,7 +76,7 @@ LeetCode and Codeforces use verified-data charts. GFG and BruteForce use actual 
 
 ### LeetCode
 
-<a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-chart-v1.svg" alt="LeetCode — 36 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
+<a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-chart-v1.svg" alt="LeetCode — 37 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
 
 ### Codeforces
 
@@ -107,7 +107,7 @@ LeetCode and Codeforces use verified-data charts. GFG and BruteForce use actual 
 
 | Platform | Problems solved | Verified |
 | --- | --- | --- |
-| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 36 | 2026-11-01 |
+| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 37 | 2026-11-01 |
 | [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-11-01 |
 | [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 94 | 2026-11-01 |
 | [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 119 | 2026-11-01 |
