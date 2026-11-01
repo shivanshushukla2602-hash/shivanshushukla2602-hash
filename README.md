@@ -104,30 +104,15 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-<picture><source media="(max-width: 767px)" srcset="assets/coding-overview-mobile-v1.svg" /><img src="assets/coding-overview-v1.svg" alt="Verified solved totals: leetcode 37, codeforces 66, gfg 94, bruteforce 119. Separate platform counts, refreshed daily." width="100%" /></picture>
-
-[LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19) · [GeeksforGeeks ↗](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) · [BruteForce ↗](https://bruteforce.pwioi.com/profile/shivanshu_19)
-
-<details>
-<summary><strong>View difficulty charts, screenshots and verification</strong></summary>
-
-LeetCode and Codeforces use verified-data charts. GFG and BruteForce use actual platform screenshots.
-
-### LeetCode
-
 <a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-chart-v1.svg" alt="LeetCode — 37 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
-
-### Codeforces
 
 <a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-chart-v1.svg" alt="Codeforces — 66 problems solved; publicly verified 2026-11-01. Open my profile. Verified-data chart, not a platform screenshot." width="100%" /></a>
 
-### GeeksforGeeks
-
 <p align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-panel-2026-11-01.png" alt="Actual GeeksforGeeks Problems Overview panel: 94 solved — Basic 25, Easy 48, Medium 20, Hard 1, School 0." width="480" /></a></p>
 
-### PW IOI BruteForce
-
 <a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-panel-2026-11-01.png" alt="Actual BruteForce Problem Solving Stats panel: 119 solved — Easy 84, Medium 32 and Hard 3, with the platform's original progress gauges." width="100%" /></a>
+
+<sub>GFG and BruteForce: actual platform screenshots captured 1 November 2026. LeetCode and Codeforces: verified-data charts; these platforms blocked screenshot capture.</sub>
 
 <details>
 <summary><strong>Full profiles, activity and recent solved questions</strong></summary>
@@ -155,9 +140,6 @@ LeetCode and Codeforces use verified-data charts. GFG and BruteForce use actual 
 <!-- CODING-STATS:END -->
 
 <sub>Publicly verified statistics. Counts are kept separate across platforms.</sub>
-
-
-</details>
 
 [Browse my public practice code ↗](https://github.com/shivanshushukla2602-hash/Leetcode)
 
