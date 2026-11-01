@@ -1,0 +1,10 @@
+import {chromium} from 'playwright-core';
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {createServer} from 'node:http';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),out=path.join(root,'preview/projects-v10');fs.mkdirSync(out,{recursive:true});
+const data=JSON.parse(fs.readFileSync(path.join(root,'scripts/project-data.json'),'utf8'));
+const server=createServer((req,res)=>{const f=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(!f.startsWith(root+path.sep)||!fs.existsSync(f)||!fs.statSync(f).isFile()){res.writeHead(404);res.end();return}res.setHeader('Content-Type',({'.html':'text/html','.png':'image/png','.webp':'image/webp','.woff2':'font/woff2','.ttf':'font/ttf'})[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f))});
+await new Promise(r=>server.listen(0,'127.0.0.1',r));const origin=`http://127.0.0.1:${server.address().port}`;
+const browser=await chromium.launch({executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',headless:true});
+try{const page=await browser.newPage({deviceScaleFactor:1});
+if(!fs.existsSync(path.join(root,'assets/project-previews/portfolio.png'))){await page.setViewportSize({width:1440,height:900});await page.goto('http://127.0.0.1:8080/',{waitUntil:'networkidle'});await page.waitForTimeout(2000);await page.screenshot({path:path.join(root,'assets/project-previews/portfolio.png')});}
+for(const mobile of [false,true]){await page.setViewportSize(mobile?{width:600,height:610}:{width:1000,height:330});await page.goto(origin+'/scripts/project-showcase.html');for(const [i,p]of data.entries()){await page.evaluate(p=>window.configure(p),{...p,i});for(let f=0;f<(process.argv.includes('--preview')?1:48);f++){await page.evaluate(f=>window.setFrame(f),f);await page.screenshot({path:path.join(out,`${p.key}${mobile?'-mobile':''}-${String(f).padStart(3,'0')}.png`)});}console.log(p.key+(mobile?' mobile':' desktop'));}}}finally{await browser.close();await new Promise(r=>server.close(r));}

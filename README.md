@@ -44,20 +44,59 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 
 Personal ideas, semester projects, and a buildathon challenge. A few things I’ve put into the world.
 
-<table>
-<tr>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/My-Portfolio"><picture><source media="(max-width: 767px)" srcset="assets/project-portfolio-mobile-v8.svg" /><img src="assets/project-portfolio-v8.svg" alt="Shivanshu Shukla: my personal portfolio — skills, selected projects and learning journey. HTML, CSS and JavaScript." width="100%" /></picture></a></td>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/PyCosmos"><picture><source media="(max-width: 767px)" srcset="assets/project-pycosmos-mobile-v8.svg" /><img src="assets/project-pycosmos-v8.svg" alt="PyCosmos: a personal Python learning platform with browser-based practice. React, JavaScript and Pyodide." width="100%" /></picture></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/SevaRecover"><picture><source media="(max-width: 767px)" srcset="assets/project-sevarecover-mobile-v8.svg" /><img src="assets/project-sevarecover-v8.svg" alt="SevaRecover: an Amazon Buildathon project exploring public-service application recovery. React, TypeScript and Python." width="100%" /></picture></a></td>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/InnovateX"><picture><source media="(max-width: 767px)" srcset="assets/project-innovatex-mobile-v8.svg" /><img src="assets/project-innovatex-v8.svg" alt="InnovateX: an end-semester team portfolio bringing people and shared work together. HTML, CSS and JavaScript." width="100%" /></picture></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/SpendWise-old"><picture><source media="(max-width: 767px)" srcset="assets/project-spendwise-mobile-v8.svg" /><img src="assets/project-spendwise-v8.svg" alt="SpendWise: an end-semester personal-finance dashboard interface. HTML and CSS." width="100%" /></picture></a></td>
-<td width="50%"><a href="https://github.com/shivanshushukla2602-hash/Bus-Reservation-System"><picture><source media="(max-width: 767px)" srcset="assets/project-bus-mobile-v8.svg" /><img src="assets/project-bus-v8.svg" alt="Bus Reservation System: an end-semester project connecting seat booking, passenger records and a database. Express, SQLite and JavaScript." width="100%" /></picture></a></td>
-</tr>
-</table>
+<a href="https://github.com/shivanshushukla2602-hash/My-Portfolio">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-portfolio-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-portfolio-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-portfolio-mobile-v10.gif" />
+  <img src="assets/project-portfolio-v10.gif" alt="My portfolio — Personal portfolio. A home for my work, built to make every detail feel considered. HTML · CSS · JAVASCRIPT. Open the repository." width="100%" />
+</picture>
+</a>
+
+<a href="https://github.com/shivanshushukla2602-hash/PyCosmos">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-pycosmos-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-pycosmos-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-pycosmos-mobile-v10.gif" />
+  <img src="assets/project-pycosmos-v10.gif" alt="PyCosmos — Personal platform. Built to make Python practice accessible, right inside the browser. REACT · JAVASCRIPT · PYODIDE. Open the repository." width="100%" />
+</picture>
+</a>
+
+<a href="https://github.com/shivanshushukla2602-hash/SevaRecover">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-sevarecover-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-sevarecover-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-sevarecover-mobile-v10.gif" />
+  <img src="assets/project-sevarecover-v10.gif" alt="SevaRecover — Amazon Buildathon. Created to help people understand rejected public-service applications. REACT · TYPESCRIPT · PYTHON. Open the repository." width="100%" />
+</picture>
+</a>
+
+<a href="https://github.com/shivanshushukla2602-hash/InnovateX">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-innovatex-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-innovatex-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-innovatex-mobile-v10.gif" />
+  <img src="assets/project-innovatex-v10.gif" alt="InnovateX — End-semester project. A shared space to introduce our team and bring its work together. HTML · CSS · JAVASCRIPT. Open the repository." width="100%" />
+</picture>
+</a>
+
+<a href="https://github.com/shivanshushukla2602-hash/SpendWise-old">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-spendwise-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-spendwise-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-spendwise-mobile-v10.gif" />
+  <img src="assets/project-spendwise-v10.gif" alt="SpendWise — End-semester project. An interface experiment to make everyday finances easier to read. HTML · CSS · FINANCE UI. Open the repository." width="100%" />
+</picture>
+</a>
+
+<a href="https://github.com/shivanshushukla2602-hash/Bus-Reservation-System">
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-bus-mobile-v10-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-bus-v10-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/project-bus-mobile-v10.gif" />
+  <img src="assets/project-bus-v10.gif" alt="Bus Reservation — End-semester project. Built to connect seat booking, passenger records and a database. EXPRESS · SQLITE · JAVASCRIPT. Open the repository." width="100%" />
+</picture>
+</a>
 
 <p align="center"><a href="https://shiv-and-shu-portfolio.vercel.app/#work"><strong>Explore the interactive project gallery ↗</strong></a></p>
 
