@@ -48,7 +48,7 @@ def fetch(key):
  d,_=json.JSONDecoder().raw_decode(s[m.end():])
  return {'solved':d['totalSolved'],'breakdown':{k:d[k]['solved'] for k in ['easy','medium','hard']},'source':URLS[key]}
 from visuals import coding_card
-from verified_coding_charts import render as render_verified_chart
+from verified_coding_charts import render as render_verified_chart, overview as render_overview
 
 def render(key,data):return coding_card(key,data,False)
 def render_mobile(key,data):return coding_card(key,data,True)
@@ -64,10 +64,15 @@ def main():
    cache[key]=data;(OUT/f'coding-{key}-v8.svg').write_text(render(key,data));(OUT/f'coding-{key}-mobile-v8.svg').write_text(render_mobile(key,data));print(json.dumps({'platform':key,'solved':data.get('solved'),'verified_on':data.get('as_of'),'refresh_error':error}))
  for key in ['leetcode','codeforces']:
   (OUT/f'coding-{key}-chart-v1.svg').write_text(render_verified_chart(key,cache[key]))
+ for mobile in [False,True]:
+  suffix='-mobile' if mobile else ''
+  (OUT/f'coding-overview{suffix}-v1.svg').write_text(render_overview(cache,mobile))
  CACHE.write_text(json.dumps(cache,indent=2)+'\n')
  readme=ROOT/'README.md'
  if readme.exists():
   text=readme.read_text();rows=[]
+  overview_label='Verified solved totals: '+', '.join(k+' '+str(cache.get(k,{}).get('solved','unavailable')) for k in ['leetcode','codeforces','gfg','bruteforce'])+'. Separate platform counts, refreshed daily.'
+  text=re.sub(r'(<img src="assets/coding-overview-v1\.svg" alt=")[^"]*',lambda m:m.group(1)+escape(overview_label,quote=True),text)
   names={'leetcode':'LeetCode','codeforces':'Codeforces','gfg':'GeeksforGeeks','bruteforce':'PW IOI BruteForce'}
   for key,d in cache.items():
    if 'solved' not in d:continue

@@ -65,7 +65,14 @@ Personal ideas, semester projects, and a buildathon challenge. A few things I’
 
 Data structures, algorithms, and a little more understanding with every problem.
 
-LeetCode and Codeforces use **verified-data charts**. GFG and BruteForce show **actual platform screenshots** captured on 1 November 2026.
+<picture><source media="(max-width: 767px)" srcset="assets/coding-overview-mobile-v1.svg" /><img src="assets/coding-overview-v1.svg" alt="Verified solved totals: LeetCode 36, Codeforces 66, GeeksforGeeks 94, BruteForce 119. Separate platform counts, refreshed daily." width="100%" /></picture>
+
+[LeetCode ↗](https://leetcode.com/u/Shivanshu_19/) · [Codeforces ↗](https://codeforces.com/profile/shivanshu_19) · [GeeksforGeeks ↗](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) · [BruteForce ↗](https://bruteforce.pwioi.com/profile/shivanshu_19)
+
+<details>
+<summary><strong>View difficulty charts, screenshots and verification</strong></summary>
+
+LeetCode and Codeforces use verified-data charts. GFG and BruteForce use actual platform screenshots.
 
 ### LeetCode
 
@@ -109,6 +116,9 @@ LeetCode and Codeforces use **verified-data charts**. GFG and BruteForce show **
 <!-- CODING-STATS:END -->
 
 <sub>Publicly verified statistics. Counts are kept separate across platforms.</sub>
+
+
+</details>
 
 [Browse my public practice code ↗](https://github.com/shivanshushukla2602-hash/Leetcode)
 

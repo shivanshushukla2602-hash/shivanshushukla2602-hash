@@ -47,3 +47,20 @@ def codeforces(data):
  return shell('Codeforces verified-data chart: '+str(total)+' unique solved; '+', '.join(k+': '+str(v) for k,v in items),b,date)
 def render(key,data):
  return leetcode(data) if key=='leetcode' else codeforces(data)
+
+def overview(cache,mobile=False):
+ """Four separate platform totals in one responsive, neutral summary."""
+ w,h=(600,420) if mobile else (1000,252)
+ body=f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="22" fill="#0b0b0b" stroke="#30302e"/>'
+ body+=txt(28,38,'PROBLEMS SOLVED',12,FG,extra='letter-spacing="2"')
+ entries=[('leetcode','LeetCode'),('codeforces','Codeforces'),('gfg','GeeksforGeeks'),('bruteforce','BruteForce')]
+ for i,(key,name) in enumerate(entries):
+  data=cache.get(key,{});value=data.get('solved','—');as_of=data.get('as_of','Not verified')
+  if mobile:x=30+(i%2)*286;y=121+(i//2)*151
+  else:x=30+i*246;y=126
+  body+=txt(x,y,value,55 if mobile else 62,FG,True,extra='letter-spacing="-2"')+txt(x,y+34,name,19 if mobile else 18,FG)+txt(x,y+58,'Verified '+as_of,11,MUTED)
+  if not mobile and i<3:body+=f'<path d="M{x+218} 73V184" stroke="#30302e"/>'
+ if mobile:body+='<path d="M300 73V343M28 216H572" stroke="#30302e"/>'
+ body+=f'<path d="M28 {h-46}H{w-28}" stroke="#30302e"/>'+txt(28,h-20,'Separate platform totals · refreshed daily',12,MUTED)
+ names=', '.join(name+': '+str(cache.get(key,{}).get('solved','unavailable')) for key,name in entries)
+ return f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title"><title id="title">{escape("Solved-problem overview — "+names)}</title>'+body+'</svg>'

@@ -70,3 +70,7 @@ The main problem-solving section now shows only the original GeeksforGeeks Probl
 ## Approved verified-data charts
 
 The owner selected verified-data charts for LeetCode and Codeforces. These are explicitly labelled in the README and within the images, not presented as native platform screenshots. `scripts/verified_coding_charts.py` renders a LeetCode difficulty donut and green Codeforces rating-distribution bars. The Codeforces distribution deduplicates accepted problems before grouping their official problem ratings; it does not invent a user contest rating or treat unique problems divided by submissions as an acceptance rate. Both distributions must sum to the verified solved count. `scripts/update_coding.py` refreshes these two charts daily while preserving the genuine GFG and BruteForce screenshots.
+
+## Unified problem-solving overview
+
+All four solved totals now appear in a single responsive black-and-off-white panel. Desktop uses four columns; mobile uses a two-by-two layout within the same section. Each count retains its own verification date, and the counts are not added together because platforms may overlap. The daily coding refresh regenerates both summary assets. Detailed charts, original screenshots and source verification remain available inside one collapsed disclosure below the summary.
