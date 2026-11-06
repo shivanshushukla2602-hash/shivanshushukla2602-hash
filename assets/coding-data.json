@@ -1,13 +1,13 @@
 {
   "leetcode": {
-    "solved": 48,
+    "solved": 50,
     "breakdown": {
-      "easy": 27,
+      "easy": 28,
       "medium": 18,
-      "hard": 3
+      "hard": 4
     },
     "source": "https://leetcode.com/graphql/",
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "profile": "https://leetcode.com/u/Shivanshu_19/"
   },
   "codeforces": {
@@ -18,25 +18,25 @@
       "900": 8
     },
     "source": "https://codeforces.com/api/user.status?handle=shivanshu_19",
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "profile": "https://codeforces.com/profile/shivanshu_19"
   },
   "gfg": {
-    "solved": 110,
-    "score": 244,
+    "solved": 117,
+    "score": 265,
     "source": "https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity",
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "profile": "https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"
   },
   "bruteforce": {
-    "solved": 146,
+    "solved": 150,
     "breakdown": {
-      "easy": 93,
-      "medium": 47,
+      "easy": 96,
+      "medium": 48,
       "hard": 6
     },
     "source": "https://bruteforce.pwioi.com/profile/shivanshu_19",
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "profile": "https://bruteforce.pwioi.com/profile/shivanshu_19"
   }
 }
