@@ -134,10 +134,10 @@ Data structures, algorithms, and a little more understanding with every problem.
 
 | Platform | Problems solved | Verified |
 | --- | --- | --- |
-| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 55 | 2026-11-07 |
-| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-11-07 |
-| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 118 | 2026-11-07 |
-| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 155 | 2026-11-07 |
+| [LeetCode](https://leetcode.com/u/Shivanshu_19/) | 58 | 2026-11-08 |
+| [Codeforces](https://codeforces.com/profile/shivanshu_19) | 66 | 2026-11-08 |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity) | 120 | 2026-11-08 |
+| [PW IOI BruteForce](https://bruteforce.pwioi.com/profile/shivanshu_19) | 162 | 2026-11-08 |
 
 </details>
 <!-- CODING-STATS:END -->
