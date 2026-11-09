@@ -68,9 +68,6 @@ def main():
   suffix='-mobile' if mobile else ''
   (OUT/f'coding-overview{suffix}-v1.svg').write_text(render_overview(cache,mobile))
  CACHE.write_text(json.dumps(cache,indent=2)+'\n')
- # Keep the animated profile overview synchronized with the same verified cache.
- from kinetic_sections import render as render_kinetic
- render_kinetic('coding')
  readme=ROOT/'README.md'
  if readme.exists():
   text=readme.read_text();rows=[]

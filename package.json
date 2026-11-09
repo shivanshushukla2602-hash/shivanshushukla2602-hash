@@ -6,7 +6,7 @@
     "render": "python3 scripts/generate_design.py && node scripts/render_kinetic_header.mjs && python3 scripts/pack_kinetic_header.py && node scripts/render_studio.mjs && python3 scripts/pack_animations.py lab lab-mobile",
     "render:header": "node scripts/render_kinetic_header.mjs && python3 scripts/pack_kinetic_header.py",
     "render:projects": "node scripts/render_projects.mjs && python3 scripts/pack_projects.py",
-    "render:sections": "python3 scripts/kinetic_sections.py"
+    "render:sections": "python3 scripts/profile_destinations.py"
   },
   "devDependencies": {
     "playwright-core": "1.64.1",

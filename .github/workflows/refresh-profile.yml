@@ -27,8 +27,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/update_activity.py
-      - name: Refresh accessible public coding stats
-        run: python3 scripts/update_coding.py
       - name: Commit changed cards
         run: |
           if ! git diff --quiet -- assets README.md; then
