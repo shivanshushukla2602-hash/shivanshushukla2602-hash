@@ -2,7 +2,27 @@
 
 The root README is the public GitHub profile. Its artwork lives in `assets/`.
 
-## Current portfolio and practice destinations (v12)
+## Current motion graphics (v13)
+
+Each destination now has a separate silhouette, material palette and motion
+mechanism. The portfolio uses nested architectural frames with depth, opening
+angles and a floating cursor. LeetCode uses a twisting amber ribbon; Codeforces
+uses a blue Newton cradle with alternate outer pendulums; GeeksforGeeks uses a
+green rotating helix with travelling pulses; BruteForce uses separating origami
+facets. The experiment section is an iridescent sheet carrying travelling waves.
+These sections share typography, but no miniature floors, desks or robot props.
+The original seated-developer scene remains a separate illustration below.
+
+Run `npm run render:sections` or `python3 scripts/motion_destinations.py` after
+installing `requirements.txt`; `--preview` renders static images only. The
+renderer uses the canvas/projection helpers in `kinetic_sections.py` and button
+helpers from `profile_destinations.py`, with fresh geometry and deformation code.
+The eight GIFs use 60 samples at 100 ms each. The two wide scenes have dedicated
+mobile layouts, and every animation has a static reduced-motion alternative.
+Links, content scope and the activity-only daily refresh remain unchanged:
+there are no project listings or coding totals in the profile.
+
+## Previous portfolio and practice destinations (v12)
 
 The profile now presents one animated portfolio destination and four animated
 practice-profile links. It intentionally shows no project directory, solved

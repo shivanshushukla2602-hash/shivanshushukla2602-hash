@@ -44,10 +44,10 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 
 <a href="https://shiv-and-shu-portfolio.vercel.app">
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/portfolio-portal-mobile-v12-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/portfolio-portal-v12-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/portfolio-portal-mobile-v12.gif" />
-  <img src="assets/portfolio-portal-v12.gif" alt="Explore my portfolio. An animated miniature 3D studio with a friendly robot, dual screens, moving design blocks and an Explore my portfolio button. Open shiv-and-shu-portfolio.vercel.app." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/portfolio-portal-mobile-v13-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/portfolio-portal-v13-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/portfolio-portal-mobile-v13.gif" />
+  <img src="assets/portfolio-portal-v13.gif" alt="Explore my portfolio. A layered 3D doorway opens and tilts in depth as a dimensional cursor floats across it. Open shiv-and-shu-portfolio.vercel.app." width="100%" />
 </picture>
 </a>
 
@@ -57,28 +57,28 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 <tr>
 <td width="50%" align="center"><a href="https://leetcode.com/u/Shivanshu_19/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-leetcode-v12-static.png" />
-  <img src="assets/practice-leetcode-v12.gif" alt="LeetCode — open my problem-solving profile. An animated miniature 3D learning scene." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-leetcode-v13-static.png" />
+  <img src="assets/practice-leetcode-v13.gif" alt="LeetCode — open my problem-solving profile. An amber code ribbon twists through three-dimensional space." width="100%" />
 </picture>
 <br/><strong>LeetCode ↗</strong></a></td>
 <td width="50%" align="center"><a href="https://codeforces.com/profile/shivanshu_19">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-codeforces-v12-static.png" />
-  <img src="assets/practice-codeforces-v12.gif" alt="Codeforces — open my problem-solving profile. An animated miniature 3D learning scene." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-codeforces-v13-static.png" />
+  <img src="assets/practice-codeforces-v13.gif" alt="Codeforces — open my problem-solving profile. A blue Newton cradle exchanges momentum between swinging metallic spheres." width="100%" />
 </picture>
 <br/><strong>Codeforces ↗</strong></a></td>
 </tr>
 <tr>
 <td width="50%" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-gfg-v12-static.png" />
-  <img src="assets/practice-gfg-v12.gif" alt="GeeksforGeeks — open my problem-solving profile. An animated miniature 3D learning scene." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-gfg-v13-static.png" />
+  <img src="assets/practice-gfg-v13.gif" alt="GeeksforGeeks — open my problem-solving profile. A green double helix rotates with travelling light pulses." width="100%" />
 </picture>
 <br/><strong>GeeksforGeeks ↗</strong></a></td>
 <td width="50%" align="center"><a href="https://bruteforce.pwioi.com/profile/shivanshu_19">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-bruteforce-v12-static.png" />
-  <img src="assets/practice-bruteforce-v12.gif" alt="BruteForce — open my problem-solving profile. An animated miniature 3D learning scene." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-bruteforce-v13-static.png" />
+  <img src="assets/practice-bruteforce-v13.gif" alt="BruteForce — open my problem-solving profile. An origami core separates into coloured triangular facets and folds together again." width="100%" />
 </picture>
 <br/><strong>BruteForce ↗</strong></a></td>
 </tr>
@@ -87,10 +87,10 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 ## A little room to experiment
 
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/learning-playground-mobile-v12-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/learning-playground-v12-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/learning-playground-mobile-v12.gif" />
-  <img src="assets/learning-playground-v12.gif" alt="A miniature animated 3D learning playground: a friendly articulated robot, floating puzzle blocks, a moving desk lamp, plants and a workshop board. Small steps. New ideas." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/motion-silk-mobile-v13-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-silk-v13-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/motion-silk-mobile-v13.gif" />
+  <img src="assets/motion-silk-v13.gif" alt="Follow the unexpected. An iridescent woven surface carries flowing waves through three-dimensional space, with shifting highlights and colour." width="100%" />
 </picture>
 
 ## Consistency, in perspective
