@@ -69,18 +69,12 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 <br/><strong>Codeforces ↗</strong></a></td>
 </tr>
 <tr>
-<td width="50%" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity">
+<td colspan="2" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity">
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-gfg-v13-static.png" />
-  <img src="assets/practice-gfg-v13.gif" alt="GeeksforGeeks — open my problem-solving profile. A green double helix rotates with travelling light pulses." width="100%" />
+  <img src="assets/practice-gfg-v13.gif" alt="GeeksforGeeks — open my problem-solving profile. A green double helix rotates with travelling light pulses." width="50%" />
 </picture>
 <br/><strong>GeeksforGeeks ↗</strong></a></td>
-<td width="50%" align="center"><a href="https://bruteforce.pwioi.com/profile/shivanshu_19">
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-bruteforce-v13-static.png" />
-  <img src="assets/practice-bruteforce-v13.gif" alt="BruteForce — open my problem-solving profile. An origami core separates into coloured triangular facets and folds together again." width="100%" />
-</picture>
-<br/><strong>BruteForce ↗</strong></a></td>
 </tr>
 </table>
 

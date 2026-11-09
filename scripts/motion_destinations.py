@@ -218,7 +218,6 @@ PLATFORMS={
     'leetcode':('LeetCode','Shivanshu_19','THE CODE RIBBON',ribbon),
     'codeforces':('Codeforces','shivanshu_19','MOMENTUM IN MOTION',cradle),
     'gfg':('GeeksforGeeks','shivanshu19','CONNECTED BY CURIOSITY',helix),
-    'bruteforce':('BruteForce','shivanshu_19','TAKE THE PROBLEM APART',origami),
 }
 
 
