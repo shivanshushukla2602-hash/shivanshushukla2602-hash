@@ -42,80 +42,56 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 
 ## Selected projects
 
-Personal ideas, semester projects, and a buildathon challenge. A few things I’ve put into the world.
-
-<a href="https://github.com/shivanshushukla2602-hash/My-Portfolio">
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-portfolio-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-portfolio-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-portfolio-mobile-v10.gif" />
-  <img src="assets/project-portfolio-v10.gif" alt="My portfolio — Personal portfolio. A home for my work, built to make every detail feel considered. HTML · CSS · JAVASCRIPT. Open the repository." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/projects-mobile-kinetic-v11-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/projects-kinetic-v11-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/projects-mobile-kinetic-v11.gif" />
+  <img src="assets/projects-kinetic-v11.gif" alt="Built from curiosity. A rotating pearl-metal sculpture with six orbiting project satellites: My portfolio, PyCosmos, SevaRecover, InnovateX, SpendWise and Bus Reservation. Open each repository below." width="100%" />
 </picture>
-</a>
 
-<a href="https://github.com/shivanshushukla2602-hash/PyCosmos">
-<picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-pycosmos-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-pycosmos-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-pycosmos-mobile-v10.gif" />
-  <img src="assets/project-pycosmos-v10.gif" alt="PyCosmos — Personal platform. Built to make Python practice accessible, right inside the browser. REACT · JAVASCRIPT · PYODIDE. Open the repository." width="100%" />
-</picture>
-</a>
-
-<a href="https://github.com/shivanshushukla2602-hash/SevaRecover">
-<picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-sevarecover-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-sevarecover-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-sevarecover-mobile-v10.gif" />
-  <img src="assets/project-sevarecover-v10.gif" alt="SevaRecover — Amazon Buildathon. Created to help people understand rejected public-service applications. REACT · TYPESCRIPT · PYTHON. Open the repository." width="100%" />
-</picture>
-</a>
-
-<a href="https://github.com/shivanshushukla2602-hash/InnovateX">
-<picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-innovatex-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-innovatex-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-innovatex-mobile-v10.gif" />
-  <img src="assets/project-innovatex-v10.gif" alt="InnovateX — End-semester project. A shared space to introduce our team and bring its work together. HTML · CSS · JAVASCRIPT. Open the repository." width="100%" />
-</picture>
-</a>
-
-<a href="https://github.com/shivanshushukla2602-hash/SpendWise-old">
-<picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-spendwise-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-spendwise-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-spendwise-mobile-v10.gif" />
-  <img src="assets/project-spendwise-v10.gif" alt="SpendWise — End-semester project. An interface experiment to make everyday finances easier to read. HTML · CSS · FINANCE UI. Open the repository." width="100%" />
-</picture>
-</a>
-
-<a href="https://github.com/shivanshushukla2602-hash/Bus-Reservation-System">
-<picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/project-bus-mobile-v10-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/project-bus-v10-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/project-bus-mobile-v10.gif" />
-  <img src="assets/project-bus-v10.gif" alt="Bus Reservation — End-semester project. Built to connect seat booking, passenger records and a database. EXPRESS · SQLITE · JAVASCRIPT. Open the repository." width="100%" />
-</picture>
-</a>
+| Project | The idea |
+| --- | --- |
+| [**My portfolio ↗**](https://github.com/shivanshushukla2602-hash/My-Portfolio) | A home for my work, built to make every detail feel considered. |
+| [**PyCosmos ↗**](https://github.com/shivanshushukla2602-hash/PyCosmos) | Built to make Python practice accessible, right inside the browser. |
+| [**SevaRecover ↗**](https://github.com/shivanshushukla2602-hash/SevaRecover) | Created to help people understand rejected public-service applications. |
+| [**InnovateX ↗**](https://github.com/shivanshushukla2602-hash/InnovateX) | A shared space to introduce our team and bring its work together. |
+| [**SpendWise ↗**](https://github.com/shivanshushukla2602-hash/SpendWise-old) | An interface experiment to make everyday finances easier to read. |
+| [**Bus Reservation ↗**](https://github.com/shivanshushukla2602-hash/Bus-Reservation-System) | Built to connect seat booking, passenger records and a database. |
 
 <p align="center"><a href="https://shiv-and-shu-portfolio.vercel.app/#work"><strong>Explore the interactive project gallery ↗</strong></a></p>
 
 ## Problem solving
 
-Data structures, algorithms, and a little more understanding with every problem.
+<picture>
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/coding-mobile-kinetic-v11-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/coding-kinetic-v11-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/coding-mobile-kinetic-v11.gif" />
+  <img src="assets/coding-kinetic-v11.gif" alt="Think. Try. Understand. Four rotating 3D metal sculptures beside fixed, separately verified solved totals for LeetCode, Codeforces, GeeksforGeeks and BruteForce. Each count shows its verification date. Animation is decorative; totals refresh daily." width="100%" />
+</picture>
 
-<table>
-<tr>
-<td width="50%" align="center"><a href="https://leetcode.com/u/Shivanshu_19/"><img src="assets/coding-leetcode-grid-v2.png" alt="LeetCode: 37 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
-<td width="50%" align="center"><a href="https://codeforces.com/profile/shivanshu_19"><img src="assets/coding-codeforces-grid-v2.png" alt="Codeforces: 68 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
-</tr>
-<tr>
-<td width="50%" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity"><img src="assets/coding-gfg-grid-v2.png" alt="GeeksforGeeks: 94 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
-<td width="50%" align="center"><a href="https://bruteforce.pwioi.com/profile/shivanshu_19"><img src="assets/coding-bruteforce-grid-v2.png" alt="BruteForce: 119 solved, with the original platform screenshot. Open my profile." width="100%" /></a></td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://leetcode.com/u/Shivanshu_19/">LeetCode ↗</a> ·
+  <a href="https://codeforces.com/profile/shivanshu_19">Codeforces ↗</a> ·
+  <a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity">GeeksforGeeks ↗</a> ·
+  <a href="https://bruteforce.pwioi.com/profile/shivanshu_19">BruteForce ↗</a>
+</p>
 
-<sub>Actual platform screenshots: LeetCode and Codeforces supplied by me; GFG and BruteForce captured from my public profiles. Screenshots are snapshots and do not refresh automatically.</sub>
+<sub>Artwork moves; verified totals stay fixed. Each platform is counted separately. Daily refreshes retain the last verified value when a source is unavailable.</sub>
+
+<details>
+<summary><strong>Original platform screenshots (1 November 2026)</strong></summary>
+
+These screenshots are historical snapshots, not the current totals above.
+
+<img src="assets/coding-leetcode-grid-v2.png" alt="Original LeetCode statistics screenshot captured or supplied on 1 November 2026." width="100%" />
+
+<img src="assets/coding-codeforces-grid-v2.png" alt="Original Codeforces statistics screenshot captured or supplied on 1 November 2026." width="100%" />
+
+<img src="assets/coding-gfg-grid-v2.png" alt="Original GeeksforGeeks statistics screenshot captured or supplied on 1 November 2026." width="100%" />
+
+<img src="assets/coding-bruteforce-grid-v2.png" alt="Original BruteForce statistics screenshot captured or supplied on 1 November 2026." width="100%" />
+
+</details>
 
 <details>
 <summary><strong>Full profiles, activity and recent solved questions</strong></summary>

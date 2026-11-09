@@ -2,6 +2,30 @@
 
 The root README is the public GitHub profile. Its artwork lives in `assets/`.
 
+## Current project and problem-solving sections (v11)
+
+The six large project screenshot cards have been replaced by one kinetic project
+orbit: a rotating pearl-metal ring, a central cube and six orbiting numbered
+satellites. A stationary project directory and ordinary repository links keep the
+work easy to browse. The problem-solving section uses four rotating sculptures
+above fixed verified totals, with the platform name and verification date shown
+separately for each. These are decorative sculptures, not progress gauges or
+comparisons between platforms. Original screenshots remain in collapsed details
+as historical snapshots.
+
+Run `python3 scripts/kinetic_sections.py` (or `npm run render:sections`) after
+installing `requirements.txt`. The renderer uses Pillow and real perspective
+projection, face depth ordering and directional lighting; it does not require a
+browser or external rendering service. `--preview` writes only static images.
+Each desktop/mobile GIF contains 60 frames in a seamless six-second loop.
+`<picture>` selects matching static PNGs for reduced-motion preferences.
+
+`scripts/project-data.json` supplies project names and context.
+`assets/coding-data.json` supplies verified solved totals and dates.
+`scripts/update_coding.py` regenerates the coding GIFs and static fallbacks after
+every daily public-data refresh, preserving the last verified values when a
+platform cannot be reached. Older design notes below document prior versions.
+
 ## Edit content
 
 - Change the introduction, links and project destinations in `README.md`.
