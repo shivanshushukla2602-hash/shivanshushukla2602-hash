@@ -79,10 +79,10 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 ## A little room to experiment
 
 <picture>
-  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/motion-silk-mobile-v13-static.png" />
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-silk-v13-static.png" />
-  <source media="(max-width: 767px)" srcset="assets/motion-silk-mobile-v13.gif" />
-  <img src="assets/motion-silk-v13.gif" alt="Follow the unexpected. An iridescent woven surface carries flowing waves through three-dimensional space, with shifting highlights and colour." width="100%" />
+  <source media="(max-width: 767px) and (prefers-reduced-motion: reduce)" srcset="assets/motion-builder-mobile-v15-static.png" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/motion-builder-v15-static.png" />
+  <source media="(max-width: 767px)" srcset="assets/motion-builder-mobile-v15.gif" />
+  <img src="assets/motion-builder-v15.gif" alt="Build. Learn. Repeat. An articulated metallic robot arm picks up an amber block, stacks it on a blue tower, then returns it to its tray in a continuous building experiment." width="100%" />
 </picture>
 
 ## Consistency, in perspective

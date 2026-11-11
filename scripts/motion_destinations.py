@@ -236,14 +236,63 @@ def practice_frame(key,t):
     return c.finish()
 
 
+def builder(c,x,y,t,zoom=1):
+    """An articulated arm assembles a tower, then returns the block to its tray."""
+    glow(c,x+30*zoom,y,(70,136,170),180*zoom)
+    m=Motion(c,x,y,zoom)
+    progress=1-abs(1-2*(t/TAU%1))
+    stops=[(0,(-15,-105)),(.2,(25,72)),(.32,(25,-85)),
+           (.6,(145,-85)),(.8,(145,-4)),(1,(-15,-105))]
+    for (a,start),(b,end) in zip(stops,stops[1:]):
+        if a<=progress<=b:
+            u=(progress-a)/(b-a)
+            u=u*u*(3-2*u)
+            tx,ty=[start[i]+(end[i]-start[i])*u for i in range(2)]
+            break
+    # Ground grid and two distinct work stations.
+    for i in range(-180,201,38):
+        m.line([(i,148,-85),(i,148,85)],'#202c32',.7)
+    for z in range(-80,81,32):
+        m.line([(-180,148,z),(205,148,z)],'#202c32',.7)
+    m.box((-115,132,0),(104,22,88),(0,0,0),.58,.2)
+    m.box((25,140,0),(70,9,65),(0,0,0),.1,.25)
+    m.box((145,140,0),(70,9,65),(0,0,0),.58,.25)
+    for cy in [115,77]:
+        m.box((145,cy,0),(38,36,38),(0,0,0),.57,.5)
+    held=.2<progress<.8
+    block=(tx,ty+43,0) if held else ((25,115,0) if progress<=.2 else (145,39,0))
+    m.box(block,(38,36,38),(0,0,0),.105,.65)
+    # Two-link inverse kinematics keeps the gripper attached to its payload.
+    sx,sy=-115,51
+    dx,dy=tx-sx,ty-sy
+    length1,length2=151,145
+    distance=math.hypot(dx,dy)
+    theta=math.atan2(dy,dx)-math.acos(max(-1,min(1,(distance**2+length1**2-length2**2)/(2*distance*length1))))
+    ex,ey=sx+length1*math.cos(theta),sy+length1*math.sin(theta)
+    m.box((-115,90,0),(38,70,38),(0,0,0),.58,.25)
+    for ax,ay,bx,by in [(sx,sy,ex,ey),(ex,ey,tx,ty)]:
+        angle=math.atan2(by-ay,bx-ax)
+        m.box(((ax+bx)/2,(ay+by)/2,0),(math.hypot(bx-ax,by-ay),23,27),(0,0,angle),.1,.32)
+        # An inset cool strip gives the warm metal an illuminated edge.
+        m.line([(ax,ay,-16),(bx,by,-16)],'#85bfc9',2)
+    for px,py in [(sx,sy),(ex,ey),(tx,ty)]:
+        m.ball((px,py,4),16,.57)
+    spread=23 if held else 34
+    m.box((tx,ty+16,0),(spread*2+8,10,24),(0,0,0),.58,.2)
+    for side in [-1,1]:
+        m.box((tx+side*spread,ty+32,0),(8,34,22),(0,0,0),.58,.2)
+    m.draw()
+    c.text(x+25*zoom,y+185*zoom,'PICK  /  PLACE  /  REPEAT',10,MUTED,anchor='ms')
+
+
 def experiment_frame(t,mobile=False):
     w,h=(640,750) if mobile else (1080,500)
     c=Canvas(w,h)
-    c.text(34,44,'AN EXERCISE IN MOTION',12,MUTED)
-    c.text(32,116,'Follow the',49,bold=True)
-    c.text(32,175,'unexpected.',49,bold=True)
-    c.text(34,221,'A new angle. A different possibility.',15,MUTED)
-    silk(c,320 if mobile else 780,482 if mobile else 258,t,1.05 if mobile else 1.18)
+    c.text(34,44,'SMALL EXPERIMENTS. REAL PROGRESS.',12,MUTED)
+    c.text(32,116,'Build. Learn.',49,bold=True)
+    c.text(32,175,'Repeat.',49,bold=True)
+    c.text(34,221,'One small piece. One better idea.',15,MUTED)
+    builder(c,300 if mobile else 780,465 if mobile else 244,t,1.2 if mobile else 1)
     c.line([(34,h-60),(w-34,h-60)])
     c.text(34,h-30,'KEEP EXPLORING. KEEP MAKING.',11,MUTED)
     return c.finish()
@@ -267,7 +316,7 @@ def main(preview=False):
     for mobile in [False,True]:
         suffix='-mobile' if mobile else ''
         render('portfolio-portal'+suffix+'-v13',lambda t:portfolio_frame(t,mobile),preview)
-        render('motion-silk'+suffix+'-v13',lambda t:experiment_frame(t,mobile),preview)
+        render('motion-builder'+suffix+'-v15',lambda t:experiment_frame(t,mobile),preview)
     for key in PLATFORMS:render('practice-'+key+'-v14',lambda t:practice_frame(key,t),preview)
 
 
