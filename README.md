@@ -57,20 +57,20 @@ Computer science at **PW IOI, Bengaluru**. Building with **Java and JavaScript**
 <tr>
 <td width="33%" align="center"><a href="https://leetcode.com/u/Shivanshu_19/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-leetcode-v13-static.png" />
-  <img src="assets/practice-leetcode-v13.gif" alt="LeetCode — open my problem-solving profile. An amber code ribbon twists through three-dimensional space." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-leetcode-v14-static.png" />
+  <img src="assets/practice-leetcode-v14.gif" alt="LeetCode — open my problem-solving profile. An amber code ribbon twists through three-dimensional space." width="100%" />
 </picture>
 <br/><strong>LeetCode ↗</strong></a></td>
 <td width="33%" align="center"><a href="https://codeforces.com/profile/shivanshu_19">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-codeforces-v13-static.png" />
-  <img src="assets/practice-codeforces-v13.gif" alt="Codeforces — open my problem-solving profile. A blue Newton cradle exchanges momentum between swinging metallic spheres." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-codeforces-v14-static.png" />
+  <img src="assets/practice-codeforces-v14.gif" alt="Codeforces — open my problem-solving profile. A blue Newton cradle exchanges momentum between swinging metallic spheres." width="100%" />
 </picture>
 <br/><strong>Codeforces ↗</strong></a></td>
 <td width="33%" align="center"><a href="https://www.geeksforgeeks.org/profile/shivanshu19?tab=activity">
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-gfg-v13-static.png" />
-  <img src="assets/practice-gfg-v13.gif" alt="GeeksforGeeks — open my problem-solving profile. A green double helix rotates with travelling light pulses." width="100%" />
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/practice-gfg-v14-static.png" />
+  <img src="assets/practice-gfg-v14.gif" alt="GeeksforGeeks — open my problem-solving profile. A green double helix rotates with travelling light pulses." width="100%" />
 </picture>
 <br/><strong>GeeksforGeeks ↗</strong></a></td>
 </tr>

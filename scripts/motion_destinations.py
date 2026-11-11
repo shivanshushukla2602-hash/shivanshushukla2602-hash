@@ -223,15 +223,16 @@ PLATFORMS={
 
 def practice_frame(key,t):
     title,handle,label,art=PLATFORMS[key]
-    c=Canvas(540,400)
+    # Three portrait cards share the width of the 1080 x 500 experiment panel.
+    c=Canvas(540,750)
     c.text(26,48,title,29,bold=True)
     c.text(27,75,handle,13,MUTED)
     # Each card has its own silhouette, material palette and motion mechanism.
-    art(c,270,215,t,.8 if key=='gfg' else 1)
-    c.text(270,329,label,10,MUTED,anchor='ms')
-    c.line([(27,349),(513,349)])
-    c.text(27,378,'Open my profile',14)
-    arrow(c,510,364,12)
+    art(c,270,390,t,1.4 if key=='gfg' else 1.25)
+    c.text(270,650,label,10,MUTED,anchor='ms')
+    c.line([(27,699),(513,699)])
+    c.text(27,728,'Open my profile',14)
+    arrow(c,510,714,12)
     return c.finish()
 
 
@@ -267,7 +268,7 @@ def main(preview=False):
         suffix='-mobile' if mobile else ''
         render('portfolio-portal'+suffix+'-v13',lambda t:portfolio_frame(t,mobile),preview)
         render('motion-silk'+suffix+'-v13',lambda t:experiment_frame(t,mobile),preview)
-    for key in PLATFORMS:render('practice-'+key+'-v13',lambda t:practice_frame(key,t),preview)
+    for key in PLATFORMS:render('practice-'+key+'-v14',lambda t:practice_frame(key,t),preview)
 
 
 if __name__=='__main__':
